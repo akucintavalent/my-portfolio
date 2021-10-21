@@ -1,4 +1,14 @@
 
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+  
+    -webkit-box-sizing: border-box !important;
+    -moz-box-sizing: border-box !important;
+    -ms-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+}
+
 body {
     margin: 0px;
     box-sizing: border-box;
@@ -9,9 +19,7 @@ body {
     height: auto;
     display: inline-block;
     height: min-content;
-    /* display: flex;
-    flex-direction: column;
-    flex-wrap: wrap; */
+    margin-right: 5%;
 }
 
 hr {
@@ -26,22 +34,20 @@ hr {
     margin: 0px;
     width: 100%;
     text-align: justify;
-    background-color: aqua;
-    padding-right: 0px;
-    margin-right: 0px;
-    /* display: inline-block; */
+    margin-left: 5%;
 }
 
 .navigator-bar {
     display: flex;
-    height: 5vh;
-    padding: 5%;
+    height: 10vh;
     margin: 0px;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
 }
 
 .about-me {
-    background-color: bisque;
-    height: 95vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -80,14 +86,7 @@ h2.title {
 }
 
 .icons {
-    width: 200px;
+    width: 60%;
     display: flex;
     justify-content: space-between;
 }
-
-/* 
-@media screen and (max-width: 480px) {
-    .about-me {
-        background-color: cadetblue;
-    }
-} */
