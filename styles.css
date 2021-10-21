@@ -1,0 +1,38 @@
+
+body {
+    margin: 0px;
+}
+
+.menu {
+    width: 23px;
+    height: auto;
+    display: inline-block;
+    height: min-content;
+    /* display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; */
+}
+
+hr {
+    margin: 3px;
+    border: 1px solid black;
+}
+
+.welcome-text {
+    color: #28352F;
+    font-family: 'Inter';
+    font-size: 20px;
+    margin: 0px;
+    width: 100%;
+    text-align: justify;
+    background-color: aqua;
+    padding-right: 0px;
+    margin-right: 0px;
+    /* display: inline-block; */
+}
+
+.navigator-bar {
+    display: flex;
+    height: 5vh;
+    padding: 5%;
+}
