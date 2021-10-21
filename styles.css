@@ -1,92 +1,92 @@
 
-*, *:before, *:after {
-    margin: 0;
-    padding: 0;
-  
-    -webkit-box-sizing: border-box !important;
-    -moz-box-sizing: border-box !important;
-    -ms-box-sizing: border-box !important;
-    box-sizing: border-box !important;
+*, 
+*:before, 
+*:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box !important;
+  -moz-box-sizing: border-box !important;
+  -ms-box-sizing: border-box !important;
+  box-sizing: border-box !important;
 }
 
 body {
-    margin: 0px;
-    box-sizing: border-box;
+  margin: 0px;
+  box-sizing: border-box;
 }
 
 .menu {
-    width: 23px;
-    height: auto;
-    display: inline-block;
-    height: min-content;
-    margin-right: 5%;
+  width: 23px;
+  height: auto;
+  display: inline-block;
+  height: min-content;
+  margin-right: 5%;
 }
 
 hr {
-    margin: 3px;
-    border: 1px solid black;
+  margin: 3px;
+  border: 1px solid black;
 }
 
 .welcome-text {
-    color: #28352F;
-    font-family: 'Inter';
-    font-size: 20px;
-    margin: 0px;
-    width: 100%;
-    text-align: justify;
-    margin-left: 5%;
+  color: #28352F;
+  font-family: 'Inter';
+  font-size: 20px;
+  margin: 0px;
+  width: 100%;
+  text-align: justify;
+  margin-left: 5%;
 }
 
 .navigator-bar {
-    display: flex;
-    height: 10vh;
-    margin: 0px;
-    justify-content: space-around;
-    align-items: center;
-    gap: 5px;
+  display: flex;
+  height: 10vh;
+  margin: 0px;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5px;
 }
 
 .about-me {
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 5%;
-    margin: 0px;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 5%;
+  margin: 0px;
 }
 
 .title {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 52px;
-
-    text-align: center;
-    margin: 0px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  margin: 0px;
 }
 
 h1.title {
-    color: #172B4D;
+  color: #172B4D;
 }
 
 h2.title {
-    color: #36B37F;
+  color: #36B37F;
 }
 
 .my-profession {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 28px;
-    text-align: center;
-    color: #172B4D;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #172B4D;
 }
 
 .icons {
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
 }
