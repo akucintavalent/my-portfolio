@@ -1,6 +1,7 @@
 
 body {
     margin: 0px;
+    box-sizing: border-box;
 }
 
 .menu {
@@ -35,4 +36,58 @@ hr {
     display: flex;
     height: 5vh;
     padding: 5%;
+    margin: 0px;
 }
+
+.about-me {
+    background-color: bisque;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5%;
+    margin: 0px;
+}
+
+.title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+
+    text-align: center;
+    margin: 0px;
+}
+
+h1.title {
+    color: #172B4D;
+}
+
+h2.title {
+    color: #36B37F;
+}
+
+.my-profession {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #172B4D;
+}
+
+.icons {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 
+@media screen and (max-width: 480px) {
+    .about-me {
+        background-color: cadetblue;
+    }
+} */
