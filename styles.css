@@ -132,6 +132,11 @@ h2.title {
 .project {
   border: 1px solid #d0d9d4;
   border-radius: 8px;
+  background: #ebf0ee;
+  height: 474px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
 }
 
 .technologies {
@@ -151,12 +156,6 @@ h2.title {
   font-size: 12px;
   line-height: 16px;
   color: #3a4a42;
-}
-
-.project-image {
-  height: 252px;
-  width: 100%;
-  background: #ebf0ee;
 }
 
 .project-title {
@@ -205,6 +204,7 @@ h2.title {
   justify-content: space-evenly;
   height: 222px;
   align-items: center;
+  background: #fff;
 }
 
 .greenline {
