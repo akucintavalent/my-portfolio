@@ -36,6 +36,7 @@ hr {
   width: 100%;
   text-align: justify;
   margin-left: 5%;
+  text-decoration: none;
 }
 
 .navigator-bar {
@@ -45,6 +46,7 @@ hr {
   justify-content: space-around;
   align-items: center;
   gap: 5px;
+  padding-right: 5%;
 }
 
 .about-me {
@@ -55,6 +57,12 @@ hr {
   align-items: center;
   padding: 5%;
   margin: 0;
+  background: url("./images/rays.png") no-repeat, 
+    url("./images/big_bottom_left_rock.png") bottom left no-repeat,
+    url("./images/big_right_rock.png") right center no-repeat,
+    url("./images/big_upper_right_rock.png") top right no-repeat,
+    url("./images/small_left_rock.png") left center no-repeat,
+    url("./images/small_bottom_rock.png") bottom center no-repeat;
 }
 
 .title {
@@ -89,4 +97,5 @@ h2.title {
   width: 60%;
   display: flex;
   justify-content: space-between;
+  list-style-type: none;
 }
