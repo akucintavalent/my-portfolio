@@ -11,6 +11,10 @@
   box-sizing: border-box !important;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 ul {
   list-style-type: none;
 }
@@ -133,6 +137,7 @@ h2.title {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  width: 100%;
 }
 
 .tech {
@@ -204,7 +209,7 @@ h2.title {
   flex-direction: column;
   justify-content: space-evenly;
   height: 222px;
-  /* align-items: center; */
+  align-items: center;
 }
 
 .greenline {
