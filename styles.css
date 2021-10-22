@@ -11,6 +11,10 @@
   box-sizing: border-box !important;
 }
 
+ul {
+  list-style-type: none;
+}
+
 body {
   margin: 0;
   box-sizing: border-box;
@@ -49,7 +53,7 @@ hr {
   padding-right: 5%;
 }
 
-.welcome-section {
+.welcome-section, .about-me {
   height: 90vh;
   display: flex;
   flex-direction: column;
@@ -66,7 +70,15 @@ hr {
     url("./images/small_bottom_rock.png") bottom center no-repeat;
 }
 
-.title {
+.about-me{
+  height: 60vh;
+  /* justify-content: space-between; */
+  background:
+    url("./images/big_rock_3_section_top_right.png") top right no-repeat,
+    url("./images/big_rock_3_section_bottom_left.png") bottom left no-repeat;
+}
+
+.title, .greenline {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -195,23 +207,6 @@ h2.title {
   /* align-items: center; */
 }
 
-.projects-title, .greenline  {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 52px;
-  /* or 130% */
-
-  display: flex;
-  align-items: center;
-  text-align: center;
-
-  /* Neutrals/N800 */
-
-  color: #172B4D;
-}
-
 .greenline {
   color: #36b37e;
 }
@@ -229,4 +224,69 @@ h2.title {
 
 #arrow_down_button {
   margin-bottom: 17px;
+}
+
+.skills {
+  height: 50vh;
+  width: 100%;
+  background: #ebf0ee;
+  border: 1px solid #c1c7d0;
+  box-sizing: border-box;
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  margin-bottom: 24px;
+  padding: 20px;
+}
+
+.skills-section {
+  padding: 26px;
+}
+
+.skills-title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height, or 133% */
+
+  text-align: center;
+
+  /* Neutrals/N600 */
+
+  color: #344563;
+}
+
+.skills-list {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.skill-item {
+  background: #ffffff;
+  padding: 12px;
+  border-radius: 8px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height, or 133% */
+  
+  letter-spacing: 0.03em;
+  
+  /* Success/G300 */
+  
+  color: #36B37E;
 }
