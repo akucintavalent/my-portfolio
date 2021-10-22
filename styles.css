@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box !important;
+  -moz-box-sizing: border-box !important;
+  -ms-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.menu {
+  width: 23px;
+  display: inline-block;
+  height: min-content;
+  margin-right: 5%;
+}
+
+hr {
+  margin: 3px;
+  border: 1px solid black;
+}
+
+.welcome-text {
+  color: #28352f;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  margin: 0;
+  width: 100%;
+  text-align: justify;
+  margin-left: 5%;
+  text-decoration: none;
+}
+
+.navigator-bar {
+  display: flex;
+  height: 10vh;
+  margin: 0;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5px;
+  padding-right: 5%;
+}
+
+.about-me {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 5%;
+  margin: 0;
+  background:
+    url("./images/rays.png") no-repeat,
+    url("./images/big_bottom_left_rock.png") bottom left no-repeat,
+    url("./images/big_right_rock.png") right center no-repeat,
+    url("./images/big_upper_right_rock.png") top right no-repeat,
+    url("./images/small_left_rock.png") left center no-repeat,
+    url("./images/small_bottom_rock.png") bottom center no-repeat;
+}
+
+.title {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  margin: 0;
+}
+
+h1.title {
+  color: #172b4d;
+}
+
+h2.title {
+  color: #36b37f;
+}
+
+.my-profession {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #172b4d;
+}
+
+.icons {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
