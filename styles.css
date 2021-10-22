@@ -49,7 +49,7 @@ hr {
   padding-right: 5%;
 }
 
-.about-me {
+.welcome-section {
   height: 90vh;
   display: flex;
   flex-direction: column;
@@ -99,4 +99,134 @@ h2.title {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
+}
+
+.projects-section {
+  padding: 26px;
+  background: url("./images/cylinder_2_page_top_right.png") top right no-repeat;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 24px;
+}
+
+.project {
+  border: 1px solid #d0d9d4;
+  border-radius: 8px;
+}
+
+.technologies {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.tech {
+  background: #ebf0ee;
+  padding: 8px 12px;
+  border-radius: 4px;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #3A4A42;
+}
+
+.project-image {
+  height: 252px;
+  width: 100%;
+  background: #ebf0ee;
+}
+
+.project-title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 32px;
+  /* or 133% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* Theme 2 / Neutral 2 */
+
+  color: #3a4a42;
+}
+
+.see-project-button {
+  background: #36b37f;
+  border-radius: 4px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+
+  letter-spacing: 0.03em;
+
+/* Theme 2 / Neutral 11 */
+
+  color: #ffffff;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.see-project {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.project-description {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 222px;
+  /* align-items: center; */
+}
+
+.projects-title, .greenline  {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  /* or 130% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* Neutrals/N800 */
+
+  color: #172B4D;
+}
+
+.greenline {
+  color: #36b37e;
+}
+
+.projects-title-and-green-line {
+  margin-bottom: 25px;
+}
+
+.projects-title-and-green-line {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#arrow_down_button {
+  margin-bottom: 17px;
 }
