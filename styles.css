@@ -179,8 +179,8 @@ h2.title {
   align-items: center;
   padding: 12px;
   letter-spacing: 0.03em;
-  color: #ffffff;
-  font-family: Inter;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -207,14 +207,11 @@ h2.title {
 }
 
 .projects-title-and-green-line {
-  margin-bottom: 25px;
-}
-
-.projects-title-and-green-line {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 25px;
 }
 
 #arrow_down_button {
@@ -270,5 +267,5 @@ h2.title {
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  color: #36B37E;
+  color: #36b37e;
 }
