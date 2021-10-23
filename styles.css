@@ -11,6 +11,14 @@
   box-sizing: border-box !important;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
+
 body {
   margin: 0;
   box-sizing: border-box;
@@ -49,6 +57,7 @@ hr {
   padding-right: 5%;
 }
 
+.welcome-section,
 .about-me {
   height: 90vh;
   display: flex;
@@ -58,7 +67,7 @@ hr {
   padding: 5%;
   margin: 0;
   background:
-    url("./images/rays.png") no-repeat,
+    url("./images/rays.png") top center no-repeat,
     url("./images/big_bottom_left_rock.png") bottom left no-repeat,
     url("./images/big_right_rock.png") right center no-repeat,
     url("./images/big_upper_right_rock.png") top right no-repeat,
@@ -66,7 +75,15 @@ hr {
     url("./images/small_bottom_rock.png") bottom center no-repeat;
 }
 
-.title {
+.about-me {
+  height: 60vh;
+  background:
+    url("./images/big_rock_3_section_top_right.png") top right no-repeat,
+    url("./images/big_rock_3_section_bottom_left.png") bottom left no-repeat;
+}
+
+.title,
+.greenline {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -99,4 +116,168 @@ h2.title {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
+}
+
+.projects-section {
+  padding: 26px;
+  background: url("./images/cylinder_2_page_top_right.png") top right no-repeat;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 24px;
+}
+
+.project {
+  border: 1px solid #d0d9d4;
+  border-radius: 8px;
+  background: #ebf0ee;
+  height: 474px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.technologies {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.tech {
+  background: #ebf0ee;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #3a4a42;
+}
+
+.project-title {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #3a4a42;
+}
+
+.see-project-button {
+  background: #36b37f;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  letter-spacing: 0.03em;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  border: none;
+}
+
+.see-project-button:hover {
+  background: #36b37f;
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+.see-project-button:active {
+  box-shadow: none;
+  background: #008552;
+}
+
+.see-project {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.project-description {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 222px;
+  align-items: center;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.greenline {
+  color: #36b37e;
+}
+
+.projects-title-and-green-line {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+#arrow_down_button {
+  margin-bottom: 17px;
+}
+
+.skills {
+  height: 50vh;
+  width: 100%;
+  background: #ebf0ee;
+  border: 1px solid #c1c7d0;
+  box-sizing: border-box;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 24px;
+  padding: 20px;
+}
+
+.skills-section {
+  padding: 26px;
+}
+
+.skills-title {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #344563;
+}
+
+.skills-list {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.skill-item {
+  background: #fff;
+  padding: 12px;
+  border-radius: 8px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #36b37e;
 }
