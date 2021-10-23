@@ -192,11 +192,6 @@ h2.title {
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
 
-.see-project-button:visited {
-  box-shadow: none;
-  background: #008552;
-}
-
 .see-project-button:active {
   box-shadow: none;
   background: #008552;
