@@ -140,7 +140,8 @@ h2.title {
 }
 
 .technologies {
-  width: 100%;
+  width: auto;
+  position: relative;
 }
 
 .tech {
