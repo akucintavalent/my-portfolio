@@ -15,12 +15,6 @@
         <a href="#" class="welcome-text">Welcome</a>
         <nav>
             <i class="fas fa-bars"></i>
-
-            <!-- <div class="menu">
-                <hr>
-                <hr>
-                <hr>
-            </div> -->
         </nav>
     </header>
     <section class="welcome-section">
@@ -68,13 +62,7 @@
                     </div>
                 </div>
             </div>
-            <script>
-                let project1 = document.getElementById("project1");
-                let projects = document.getElementById("projects");
-                for (let i = 0; i < 5; i++) {
-                    projects.appendChild(project1.cloneNode(true));
-                }
-            </script>
+            <script src="index.js"></script>
         </div>
     </section>
     <section class="about-me-section">
@@ -129,7 +117,6 @@
             I'm always interested in hearing about new projects,
             so if you'd like to chat please get in touch.
         </h1>
-        <!--I can see the collected by the form data under this link: https://formspree.io/forms/mdoyvbjr/submissions-->
         <form action="https://formspree.io/f/mdoyvbjr" method="POST" id="contact-me-form">
             <input maxlength="30" type="text" name="name" id="name" class="form-input" placeholder="Full name" required>
             <input type="email" name="email" id="email" class="form-input" placeholder="Email address" required>

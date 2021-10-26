@@ -304,14 +304,32 @@ h2.title {
 
 .form-input::placeholder {
   padding: 15px 16px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #6B778C;
 }
 
 .textarea-input {
   height: 15vh;
+  background: #fff;
+  border: 1px solid #60c095;
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 
 .textarea-input::placeholder {
   padding: 15px 16px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: #091e42;
 }
 
 .footer-email {
