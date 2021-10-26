@@ -47,35 +47,35 @@
     </section>
     <section class="projects-section">
         <image id="arrow_down_button" src="./images/arrow_down_button.png">
-            <div class="projects-title-and-green-line">
-                <h1 class="title">My Recent Works</h1>
-                <span class="greenline">‾‾‾</span>
-            </div>
-            <div id="projects" class="projects">
-                <div id="project1" class="project">
-                    <div class="project-description">
-                        <div class="project-title">
-                            <h2>Multi-Post Stories Gain+Glory</h2>
-                        </div>
-                        <ul class="technologies">
-                            <li class="tech">Ruby on rails</li>
-                            <li class="tech">css</li>
-                            <li class="tech">JavaScript</li>
-                            <li class="tech">html</li>
-                        </ul>
-                        <div class="see-project">
-                            <button class="see-project-button">See Project</button>
-                        </div>
+        <div class="projects-title-and-green-line">
+            <h1 class="title">My Recent Works</h1>
+            <span class="greenline">‾‾‾</span>
+        </div>
+        <div id="projects" class="projects">
+            <div id="project1" class="project">
+                <div class="project-description">
+                    <div class="project-title">
+                        <h2>Multi-Post Stories Gain+Glory</h2>
+                    </div>
+                    <ul class="technologies">
+                        <li class="tech">Ruby on rails</li>
+                        <li class="tech">css</li>
+                        <li class="tech">JavaScript</li>
+                        <li class="tech">html</li>
+                    </ul>
+                    <div class="see-project">
+                        <button class="see-project-button">See Project</button>
                     </div>
                 </div>
-                <script>
-                    let project1 = document.getElementById("project1");
-                    let projects = document.getElementById("projects");
-                    for (let i = 0; i < 5; i++) {
-                        projects.appendChild(project1.cloneNode(true));
-                    }
-                </script>
             </div>
+            <script>
+                let project1 = document.getElementById("project1");
+                let projects = document.getElementById("projects");
+                for (let i = 0; i < 5; i++) {
+                    projects.appendChild(project1.cloneNode(true));
+                }
+            </script>
+        </div>
     </section>
     <section class="about-me-section">
         <div class="about-me">
