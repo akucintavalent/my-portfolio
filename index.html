@@ -120,5 +120,20 @@
             </li>
         </ul>
     </section>
+    <section class="contact-me-section">
+        <h1 class="title">
+            I'm always interested in hearing about new projects, 
+            so if you'd like to chat please get in touch.
+        </h1>
+        <!--I can see the collected by the form data under this link: https://formspree.io/forms/mdoyvbjr/submissions-->
+        <form action="https://formspree.io/f/mdoyvbjr" method="POST" id="contact-me-form">
+            <input type="text" name="name" id="name" class="form-input" placeholder="Full name" required>
+            <input type="email" name="email" id="email" class="form-input" placeholder="Email address" required>
+            <textarea id="message" class="textarea-input" name="message" placeholder="Enter text here" required></textarea>
+            <div class="see-project">
+                <button type="submit" class="see-project-button">Get in touch</button>
+            </div>
+        </form>
+    </section>
 </body>
 </html>
