@@ -285,10 +285,30 @@ h2.title {
 
 .contact-me-section {
   background: none;
+  height: auto;
 }
 
 #contact-me-form {
-  border: 1px solid red;
-  
+  border: 1px solid green;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 50vh;
 }
 
+.form-input {
+  height: 48px;
+}
+
+.form-input::placeholder {
+  padding: 15px 16px;
+}
+
+.textarea-input {
+  height: 15vh;
+}
+
+.textarea-input::placeholder {
+  padding: 15px 16px;
+}
