@@ -295,6 +295,8 @@ h2.title {
   justify-content: space-between;
   width: 100%;
   height: 50vh;
+  margin-top: 8.6vh;
+  margin-bottom: 6.8vh;
 }
 
 .form-input {
@@ -312,3 +314,16 @@ h2.title {
 .textarea-input::placeholder {
   padding: 15px 16px;
 }
+
+.footer-email {
+  margin-top: 2.8vh;
+  text-decoration: none;
+  font-family: 'Inter',sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #42526E
+}
+
