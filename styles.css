@@ -289,7 +289,6 @@ h2.title {
 }
 
 #contact-me-form {
-  border: 1px solid green;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -318,12 +317,18 @@ h2.title {
 .footer-email {
   margin-top: 2.8vh;
   text-decoration: none;
-  font-family: 'Inter',sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 32px;
   text-align: center;
-  color: #42526E
+  color: #42526e;
+  margin-bottom: 42vh;
 }
 
+.footer-line {
+  border: 3px solid black;
+  width: 40%;
+  border-radius: 2px;
+}
