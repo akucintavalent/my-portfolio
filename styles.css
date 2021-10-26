@@ -58,7 +58,8 @@ hr {
 }
 
 .welcome-section,
-.about-me {
+.about-me,
+.contact-me-section {
   height: 90vh;
   display: flex;
   flex-direction: column;
@@ -281,3 +282,13 @@ h2.title {
   letter-spacing: 0.03em;
   color: #36b37e;
 }
+
+.contact-me-section {
+  background: none;
+}
+
+#contact-me-form {
+  border: 1px solid red;
+  
+}
+
