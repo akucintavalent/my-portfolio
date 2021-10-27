@@ -364,7 +364,7 @@ h2.title {
   border-radius: 2px;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 992px) {
   .nav-desktop {
     display: block;
   }
@@ -595,7 +595,7 @@ h2.title {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1100px) {
   .projects,
   .skills-section {
     grid-template-columns: 1fr 1fr 1fr;
