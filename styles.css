@@ -19,11 +19,6 @@ ul {
   list-style-type: none;
 }
 
-body {
-  margin: 0;
-  box-sizing: border-box;
-}
-
 .menu {
   width: 23px;
   display: inline-block;
@@ -40,10 +35,8 @@ hr {
   color: #28352f;
   font-family: 'Inter', sans-serif;
   font-size: 20px;
-  margin: 0;
-  width: 100%;
+  display: inline;
   text-align: justify;
-  margin-left: 5%;
   text-decoration: none;
 }
 
@@ -54,7 +47,17 @@ hr {
   justify-content: space-around;
   align-items: center;
   gap: 5px;
-  padding-right: 5%;
+}
+
+.nav-mobile {
+  width: 85%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-mobile nav {
+  display: inline;
 }
 
 .welcome-section,
@@ -68,19 +71,19 @@ hr {
   padding: 5%;
   margin: 0;
   background:
-    url("./images/rays.png") top center no-repeat,
-    url("./images/big_bottom_left_rock.png") bottom left no-repeat,
-    url("./images/big_right_rock.png") right center no-repeat,
-    url("./images/big_upper_right_rock.png") top right no-repeat,
-    url("./images/small_left_rock.png") left center no-repeat,
-    url("./images/small_bottom_rock.png") bottom center no-repeat;
+    url("./images/mobile/rays.png") top center no-repeat,
+    url("./images/mobile/big_bottom_left_rock.png") bottom left no-repeat,
+    url("./images/mobile/big_right_rock.png") right center no-repeat,
+    url("./images/mobile/big_upper_right_rock.png") top right no-repeat,
+    url("./images/mobile/small_left_rock.png") left center no-repeat,
+    url("./images/mobile/small_bottom_rock.png") bottom center no-repeat;
 }
 
 .about-me {
   height: 60vh;
   background:
-    url("./images/big_rock_3_section_top_right.png") top right no-repeat,
-    url("./images/big_rock_3_section_bottom_left.png") bottom left no-repeat;
+    url("./images/mobile/big_rock_3_section_top_right.png") top right no-repeat,
+    url("./images/mobile/big_rock_3_section_bottom_left.png") bottom left no-repeat;
 }
 
 .title,
@@ -121,7 +124,7 @@ h2.title {
 
 .projects-section {
   padding: 26px;
-  background: url("./images/cylinder_2_page_top_right.png") top right no-repeat;
+  background: url("./images/mobile/cylinder_2_page_top_right.png") top right no-repeat;
 }
 
 .projects {
@@ -227,7 +230,13 @@ h2.title {
   margin-bottom: 25px;
 }
 
-#arrow_down_button {
+#arrow_down_button_1,
+#contact-me-form-2,
+.nav-desktop {
+  display: none;
+}
+
+#arrow_down_button_2 {
   margin-bottom: 17px;
 }
 
@@ -288,7 +297,7 @@ h2.title {
   height: auto;
 }
 
-#contact-me-form {
+#contact-me-form-1 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -300,6 +309,10 @@ h2.title {
 
 .form-input {
   height: 48px;
+  background: #fff;
+  border: 1px solid #d0d9d4;
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 
 .form-input::placeholder {
@@ -349,4 +362,242 @@ h2.title {
   border: 3px solid black;
   width: 40%;
   border-radius: 2px;
+}
+
+@media (min-width: 992px) {
+  .nav-desktop {
+    display: block;
+  }
+
+  .navigator-bar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 0;
+    height: 8vh;
+  }
+
+  .nav-links {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-links a {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    text-decoration: none;
+    color: #344563;
+  }
+
+  .welcome-section {
+    height: calc(70vw);
+    background: none;
+    background-image:
+      url("./images/desktop/rays.png"),
+      url("./images/desktop/average_rock_top.png"),
+      url("./images/desktop/big_rock_right_center.png"),
+      url("./images/desktop/big_rock_bottom.png"),
+      url("./images/desktop/small_rock_top.png"),
+      url("./images/desktop/big_rock_left.png"),
+      url("./images/desktop/small_rock_bottom.png"),
+      url("./images/desktop/average_rock_bottom.png");
+    background-repeat:
+      no-repeat,
+      no-repeat,
+      no-repeat,
+      no-repeat,
+      no-repeat,
+      no-repeat,
+      no-repeat,
+      no-repeat;
+    background-position:
+      top center,
+      75% 0,
+      right 20%,
+      75% 80%,
+      35% 10%,
+      3% 30%,
+      40% 70%,
+      20% 85%;
+    background-size:
+      90% auto,
+      18% auto,
+      18% auto,
+      18% auto,
+      5% auto,
+      19% auto,
+      10% auto,
+      12% auto;
+    justify-content: start;
+    padding-top: 15%;
+  }
+
+  .my-profession {
+    width: 60%;
+    font-family: 'Inter', sans-serif;
+    line-height: 32px;
+    margin-bottom: 3vh;
+  }
+
+  .title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 0.37px;
+  }
+
+  .icons {
+    width: auto;
+    display: inherit;
+  }
+
+  .icons img {
+    margin: 0 10px;
+  }
+
+  h2.title {
+    margin-bottom: 3vh;
+  }
+
+  #arrow_down_button_1 {
+    display: inline-block;
+    margin-top: calc(3vw);
+  }
+
+  .projects-section {
+    background: none;
+    margin-top: 111px;
+  }
+
+  .projects-title-and-green-line h1,
+  .about-me h1 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 52px;
+    color: #172b4d;
+    margin-bottom: 24px;
+  }
+
+  .about-me {
+    height: auto;
+    background-image:
+      url("./images/desktop/average_rock_right_section_3.png"),
+      url("./images/desktop/average_rock_left_section_3.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: top right, left center;
+    background-size: 15% auto, 15% auto;
+    padding: 0 0 30px 0;
+  }
+
+  .about-me .my-profession {
+    margin-bottom: 24px;
+  }
+
+  .project {
+    width: auto;
+  }
+
+  .skills {
+    height: 352px;
+  }
+
+  .projects,
+  .skills-section {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 26px 10vw 175px 10vw;
+    gap: 24px;
+  }
+
+  .project-title {
+    width: 70%;
+  }
+
+  .contact-me-section .title,
+  #contact-me-form-1,
+  .greenline,
+  #arrow_down_button_2,
+  .nav-mobile,
+  .footer-email,
+  .footer-line {
+    display: none;
+  }
+
+  .contact-me-text {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 52px;
+    color: #172b4d;
+    grid-area: contact-me-text;
+    display: flex;
+    align-items: center;
+  }
+
+  .contact-me-form-2 #name {
+    grid-area: name;
+  }
+
+  #contact-me-form-2 > input[type="email"] {
+    grid-area: email;
+  }
+
+  #contact-me-form-2 textarea {
+    grid-area: message;
+  }
+
+  #contact-me-form-2 .see-project {
+    grid-area: button;
+    display: flex;
+    justify-content: start;
+  }
+
+  #contact-me-form-2 {
+    display: grid;
+    grid-template-areas:
+      'contact-me-text name'
+      'contact-me-text email'
+      'contact-me-text message'
+      '. button';
+    grid-template-columns: 1fr 56%;
+    gap: 24px;
+    padding: 0 10vw 225px 10vw;
+    border-bottom: 1px solid #dfe1e6;
+  }
+
+  .contact-me-section,
+  .projects-section,
+  .skills-section {
+    padding: 0;
+  }
+
+  .contact-me-section .icons {
+    margin: 10px;
+  }
+
+  .contact-me-section {
+    background-image:
+      url("./images/desktop/big_rock_bottom_rigth_section_4.png"),
+      url("./images/desktop/big_rock_bottom_left_section_4.png"),
+      url("./images/desktop/small_rock_bottom_left_section_4.png");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: right 50%, left 70%, 20% 70%;
+    background-size: 15% auto, 15% auto, 10% auto;
+  }
+}
+
+@media (min-width: 1100px) {
+  .projects,
+  .skills-section {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
