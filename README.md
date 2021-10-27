@@ -9,10 +9,18 @@ The site looks like this on a mobile device.
 ![screenshot](./images/app_screenshot_3.png)
 ![screenshot](./images/app_screenshot_4.png)
 
+The site looks like this on desktop
+
+![screenshot](./images/app_screenshot_5.png)
+![screenshot](./images/app_screenshot_6.png)
+![screenshot](./images/app_screenshot_7.png)
+![screenshot](./images/app_screenshot_8.png)
+
 ## Built With
 
 - HTML
 - CSS
+- JavaScript
 
 ## Getting Started
 
@@ -20,9 +28,9 @@ The site looks like this on a mobile device.
 
 ## 👤 Author
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@akucintavalent](https://github.com/akucintavalent)
+- Twitter: [@ibodi828](https://twitter.com/ibodi828)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/bohdan-shcherbak/)
 
 ## 🤝 Contributing
 
