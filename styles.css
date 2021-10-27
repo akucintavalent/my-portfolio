@@ -310,7 +310,7 @@ h2.title {
 .form-input {
   height: 48px;
   background: #fff;
-  border: 1px solid #D0D9D4;
+  border: 1px solid #d0d9d4;
   box-sizing: border-box;
   border-radius: 4px;
 }
@@ -406,12 +406,33 @@ h2.title {
       url("./images/desktop/big_rock_left.png"),
       url("./images/desktop/small_rock_bottom.png"),
       url("./images/desktop/average_rock_bottom.png");
-    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
-      no-repeat, no-repeat, no-repeat;
-    background-position: top center, 75% 0, right 20%, 75% 80%, 35% 10%,
-      3% 30%, 40% 70%, 20% 85%;
-    background-size: 90% auto, 18% auto, 18% auto, 18% auto, 5% auto, 
-      19% auto, 10% auto, 12% auto;
+    background-repeat:
+      no-repeat,
+      no-repeat,
+      no-repeat,
+      no-repeat,
+      no-repeat,
+      no-repeat,
+      no-repeat,
+      no-repeat;
+    background-position:
+      top center,
+      75% 0,
+      right 20%,
+      75% 80%,
+      35% 10%,
+      3% 30%,
+      40% 70%,
+      20% 85%;
+    background-size:
+      90% auto,
+      18% auto,
+      18% auto,
+      18% auto,
+      5% auto,
+      19% auto,
+      10% auto,
+      12% auto;
     justify-content: start;
     padding-top: 15%;
   }
@@ -467,7 +488,7 @@ h2.title {
 
   .about-me {
     height: auto;
-    background-image: 
+    background-image:
       url("./images/desktop/average_rock_right_section_3.png"),
       url("./images/desktop/average_rock_left_section_3.png");
     background-repeat: no-repeat, no-repeat;
@@ -546,7 +567,7 @@ h2.title {
 
   #contact-me-form-2 {
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
       'contact-me-text first-name last-name'
       'contact-me-text email email'
       'contact-me-text message message'
