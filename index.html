@@ -12,9 +12,18 @@
 
 <body>
     <header class="navigator-bar">
-        <a href="#" class="welcome-text">Welcome</a>
-        <nav>
-            <i class="fas fa-bars"></i>
+        <div class="nav-mobile">
+            <a href="#" class="welcome-text">Welcome</a>
+            <nav>
+                <i class="fas fa-bars"></i>
+            </nav>
+        </div>
+        <nav class="nav-desktop">
+            <ul class="nav-links">
+                <li><a href="#">Portflio</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
         </nav>
     </header>
     <section class="welcome-section">
@@ -38,9 +47,10 @@
             <li><a href="#"><img src="./images/github.png" alt="github"></a></li>
             <li><a href="#"><img src="./images/angellist.png" alt="angellist"></a></li>
         </ul>
+        <a href="#"><image id="arrow_down_button_1" src="./images/desktop/arrow_down.png" alt="Arrow down button"></a>
     </section>
     <section class="projects-section">
-        <image id="arrow_down_button" src="./images/mobile/arrow_down_button.png">
+        <image id="arrow_down_button_2" src="./images/mobile/arrow_down_button.png">
         <div class="projects-title-and-green-line">
             <h1 class="title">My Recent Works</h1>
             <span class="greenline">‾‾‾</span>
@@ -117,10 +127,24 @@
             I'm always interested in hearing about new projects,
             so if you'd like to chat please get in touch.
         </h1>
-        <form action="https://formspree.io/f/mdoyvbjr" method="POST" id="contact-me-form">
+        <form action="https://formspree.io/f/mdoyvbjr" method="POST" id="contact-me-form-1">
             <input maxlength="30" type="text" name="name" id="name" class="form-input" placeholder="Full name" required>
             <input type="email" name="email" id="email" class="form-input" placeholder="Email address" required>
             <textarea maxlength="500" id="message" class="textarea-input" name="message" placeholder="Enter text here"
+                required></textarea>
+            <div class="see-project">
+                <button type="submit" class="see-project-button">Get in touch</button>
+            </div>
+        </form>
+        <form action="https://formspree.io/f/mdoyvbjr" method="POST" id="contact-me-form-2">
+            <p class="contact-me-text">
+                I'm always interested in hearing about new projects,
+                so if you'd like to chat please get in touch.
+            </p>
+            <input maxlength="30" type="text" name="first_name" id="first_name" class="form-input" placeholder="First name" required>
+            <input maxlength="30" type="text" name="last_name" id="last_name" class="form-input" placeholder="Last name" required>
+            <input type="email" name="email" id="email" class="form-input" placeholder="Email address" required>
+            <textarea maxlength="500" id="message" class="textarea-input" name="message" placeholder="Typing something"
                 required></textarea>
             <div class="see-project">
                 <button type="submit" class="see-project-button">Get in touch</button>

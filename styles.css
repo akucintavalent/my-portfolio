@@ -19,11 +19,6 @@ ul {
   list-style-type: none;
 }
 
-body {
-  margin: 0;
-  box-sizing: border-box;
-}
-
 .menu {
   width: 23px;
   display: inline-block;
@@ -40,10 +35,8 @@ hr {
   color: #28352f;
   font-family: 'Inter', sans-serif;
   font-size: 20px;
-  margin: 0;
-  width: 100%;
+  display: inline;
   text-align: justify;
-  margin-left: 5%;
   text-decoration: none;
 }
 
@@ -54,7 +47,17 @@ hr {
   justify-content: space-around;
   align-items: center;
   gap: 5px;
-  padding-right: 5%;
+}
+
+.nav-mobile {
+  width: 85%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-mobile nav {
+  display: inline;
 }
 
 .welcome-section,
@@ -227,7 +230,13 @@ h2.title {
   margin-bottom: 25px;
 }
 
-#arrow_down_button {
+#arrow_down_button_1,
+#contact-me-form-2,
+.nav-desktop {
+  display: none;
+}
+
+#arrow_down_button_2 {
   margin-bottom: 17px;
 }
 
@@ -288,7 +297,7 @@ h2.title {
   height: auto;
 }
 
-#contact-me-form {
+#contact-me-form-1 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -352,8 +361,33 @@ h2.title {
 }
 
 @media (min-width: 800px) {
+  .nav-desktop {
+    display: block;
+  }
+
   .navigator-bar {
-    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 0;
+    height: 8vh;
+  }
+
+  .nav-links {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-links a {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    text-decoration: none;
+    color: #344563;
   }
 
   .welcome-section {
@@ -404,5 +438,97 @@ h2.title {
 
   h2.title {
     margin-bottom: 3vh;
+  }
+
+  #arrow_down_button_1 {
+    display: inline-block;
+    margin-top: calc(3vw);
+  }
+
+  .projects-section {
+    background: none;
+  }
+
+  .projects-title-and-green-line h1,
+  .about-me h1 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 52px;
+    color: #172b4d;
+    margin-bottom: 24px;
+  }
+
+  .about-me {
+    height: auto;
+    background-image: 
+      url("./images/desktop/average_rock_right_section_3.png"),
+      url("./images/desktop/average_rock_left_section_3.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: top right, left center;
+    background-size: 15% auto, 15% auto;
+    padding: 130px 0 30px 0;
+  }
+
+  .about-me .my-profession {
+    margin-bottom: 24px;
+  }
+
+  .project {
+    width: auto;
+  }
+
+  .skills {
+    height: 352px;
+  }
+
+  .projects,
+  .skills-section {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 0 10vw;
+    gap: 24px;
+  }
+
+  .project-title {
+    width: 70%;
+  }
+
+  .contact-me-section .title,
+  #contact-me-form-1,
+  .greenline,
+  #arrow_down_button_2,
+  .nav-mobile,
+  .footer-email,
+  .footer-line {
+    display: none;
+  }
+
+  #contact-me-form-2 {
+    display: block;
+  }
+
+  .contact-me-text {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 52px;
+    /* or 173% */
+
+    display: flex;
+    align-items: center;
+
+    /* Neutrals/N800 */
+
+    color: #172B4D;
+  }
+}
+
+@media (min-width: 1200px) {
+  .projects,
+  .skills-section {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
