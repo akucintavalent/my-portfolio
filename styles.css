@@ -309,6 +309,10 @@ h2.title {
 
 .form-input {
   height: 48px;
+  background: #fff;
+  border: 1px solid #D0D9D4;
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 
 .form-input::placeholder {
@@ -447,6 +451,7 @@ h2.title {
 
   .projects-section {
     background: none;
+    margin-top: 111px;
   }
 
   .projects-title-and-green-line h1,
@@ -468,7 +473,7 @@ h2.title {
     background-repeat: no-repeat, no-repeat;
     background-position: top right, left center;
     background-size: 15% auto, 15% auto;
-    padding: 130px 0 30px 0;
+    padding: 0 0 30px 0;
   }
 
   .about-me .my-profession {
@@ -487,7 +492,7 @@ h2.title {
   .skills-section {
     display: grid;
     grid-template-columns: auto auto;
-    margin: 0 10vw;
+    margin: 26px 10vw 175px 10vw;
     gap: 24px;
   }
 
@@ -505,24 +510,71 @@ h2.title {
     display: none;
   }
 
-  #contact-me-form-2 {
-    display: block;
-  }
-
   .contact-me-text {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 30px;
     line-height: 52px;
-    /* or 173% */
-
+    color: #172b4d;
+    grid-area: contact-me-text;
     display: flex;
     align-items: center;
+  }
 
-    /* Neutrals/N800 */
+  #first_name {
+    grid-area: first-name;
+  }
 
-    color: #172B4D;
+  #last_name {
+    grid-area: last-name;
+  }
+
+  #contact-me-form-2 > input[type="email"] {
+    grid-area: email;
+  }
+
+  #contact-me-form-2 textarea {
+    grid-area: message;
+  }
+
+  #contact-me-form-2 .see-project {
+    grid-area: button;
+    display: flex;
+    justify-content: start;
+  }
+
+  #contact-me-form-2 {
+    display: grid;
+    grid-template-areas: 
+      'contact-me-text first-name last-name'
+      'contact-me-text email email'
+      'contact-me-text message message'
+      '. button .';
+    grid-template-columns: 1fr 28% 28%;
+    gap: 24px;
+    padding: 0 10vw 225px 10vw;
+    border-bottom: 1px solid #dfe1e6;
+  }
+
+  .contact-me-section,
+  .projects-section,
+  .skills-section {
+    padding: 0;
+  }
+
+  .contact-me-section .icons {
+    margin: 27px;
+  }
+
+  .contact-me-section {
+    background-image:
+      url("./images/desktop/big_rock_bottom_rigth_section_4.png"),
+      url("./images/desktop/big_rock_bottom_left_section_4.png"),
+      url("./images/desktop/small_rock_bottom_left_section_4.png");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: right 50%, left 70%, 20% 70%;
+    background-size: 15% auto, 15% auto, 10% auto;
   }
 }
 
