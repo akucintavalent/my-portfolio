@@ -543,12 +543,8 @@ h2.title {
     align-items: center;
   }
 
-  #first_name {
-    grid-area: first-name;
-  }
-
-  #last_name {
-    grid-area: last-name;
+  .contact-me-form-2 #name {
+    grid-area: name;
   }
 
   #contact-me-form-2 > input[type="email"] {
@@ -568,11 +564,11 @@ h2.title {
   #contact-me-form-2 {
     display: grid;
     grid-template-areas:
-      'contact-me-text first-name last-name'
-      'contact-me-text email email'
-      'contact-me-text message message'
-      '. button .';
-    grid-template-columns: 1fr 28% 28%;
+      'contact-me-text name'
+      'contact-me-text email'
+      'contact-me-text message'
+      '. button';
+    grid-template-columns: 1fr 56%;
     gap: 24px;
     padding: 0 10vw 225px 10vw;
     border-bottom: 1px solid #dfe1e6;
