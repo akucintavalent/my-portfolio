@@ -374,9 +374,35 @@ h2.title {
       3% 30%, 40% 70%, 20% 85%;
     background-size: 90% auto, 18% auto, 18% auto, 18% auto, 5% auto, 
       19% auto, 10% auto, 12% auto;
+    justify-content: start;
+    padding-top: 15%;
+  }
+
+  .my-profession {
+    width: 60%;
+    font-family: 'Inter', sans-serif;
+    line-height: 32px;
+    margin-bottom: 3vh;
   }
 
   .title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 0.37px;
+  }
 
+  .icons {
+    width: auto;
+    display: inherit;
+  }
+
+  .icons img {
+    margin: 0 10px;
+  }
+
+  h2.title {
+    margin-bottom: 3vh;
   }
 }
