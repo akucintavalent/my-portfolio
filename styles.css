@@ -380,6 +380,49 @@ h2.title {
   border-radius: 2px;
 }
 
+.icons img {
+  animation-duration: 10s;
+  animation-name: rotation;
+}
+
+img[alt="twitter"] {
+  animation-delay: 0ms;
+}
+
+img[alt="linkedin"] {
+  animation-delay: 1s;
+}
+
+img[alt="medium"] {
+  animation-delay: 2s;
+}
+
+img[alt="github"] {
+  animation-delay: 3s;
+}
+
+img[alt="angellist"] {
+  animation-delay: 4s;
+}
+
+@keyframes rotation {
+  /* from {
+    transform: rotate(0deg);
+  } */
+
+  /* 33% {
+    transform: rotate(360deg);
+  }
+
+  66% {
+    transform: rotate(720deg);
+  } */
+
+  to {
+    transform: rotate(1080deg);
+  }
+}
+
 @media (min-width: 992px) {
   .nav-desktop {
     display: block;
@@ -480,7 +523,7 @@ h2.title {
   h2.title {
     margin-bottom: 3vh;
   }
-  
+
   #arrow_down_button_1 {
     display: inline-block;
     margin-top: calc(3vw);
