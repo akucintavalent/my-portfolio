@@ -240,6 +240,20 @@ h2.title {
 
 #arrow_down_button_2 {
   margin-bottom: 17px;
+  animation-duration: 2s;
+  animation-name: wave;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes wave {
+  from {
+    transform: rotate(-30deg);
+  }
+
+  to {
+    transform: rotate(30deg);
+  }
 }
 
 .skills {
@@ -466,10 +480,14 @@ h2.title {
   h2.title {
     margin-bottom: 3vh;
   }
-
+  
   #arrow_down_button_1 {
     display: inline-block;
     margin-top: calc(3vw);
+    animation-duration: 2s;
+    animation-name: wave;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
   }
 
   .projects-section {
