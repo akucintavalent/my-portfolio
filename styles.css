@@ -274,6 +274,11 @@ h2.title {
   align-items: center;
   margin-bottom: 24px;
   padding: 20px;
+  transition: transform 0.5s;
+}
+
+.skills:hover {
+  transform: perspective(200px) translateZ(10px);
 }
 
 .skills-section {
