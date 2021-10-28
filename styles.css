@@ -141,6 +141,11 @@ h2.title {
   display: flex;
   flex-direction: column;
   justify-content: end;
+  transition: transform 0.5s;
+}
+
+.project:hover {
+  transform: perspective(200px) translateZ(10px);
 }
 
 .technologies {
