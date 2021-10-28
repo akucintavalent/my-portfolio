@@ -189,6 +189,8 @@ h2.title {
   font-size: 17px;
   line-height: 24px;
   border: none;
+  transition-property: background-color, box-shadow;
+  transition-duration: 1s, 1s;
 }
 
 .see-project-button:hover {
