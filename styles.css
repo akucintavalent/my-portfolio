@@ -113,6 +113,15 @@ h2.title {
   line-height: 28px;
   text-align: center;
   color: #172b4d;
+  animation-duration: 2s;
+  animation-name: sliding_up;
+}
+
+@keyframes sliding_up {
+  from {
+    transform: translateY(77px);
+    color: rgba(255, 255, 255, 0);
+  }
 }
 
 .icons {
