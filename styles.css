@@ -421,6 +421,18 @@ img[alt="angellist"] {
   }
 }
 
+#introduction .title {
+  animation-duration: 2s;
+  animation-name: sliding_down;
+}
+
+@keyframes sliding_down {
+  from {
+    transform: translateY(-77px);
+    color: rgba(255, 255, 255, 0);
+  }
+}
+
 @media (min-width: 992px) {
   .nav-desktop {
     display: block;
