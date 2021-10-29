@@ -442,6 +442,17 @@ img[alt="angellist"] {
   }
 }
 
+body {
+  animation-duration: 5s;
+  animation-name: whitening;
+}
+
+@keyframes whitening {
+  from {
+    background-color: #beecd9;
+  }
+}
+
 @media (min-width: 992px) {
   .nav-desktop {
     display: block;
