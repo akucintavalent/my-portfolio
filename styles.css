@@ -400,8 +400,9 @@ h2.title {
 }
 
 .icons img {
-  animation-duration: 10s;
+  animation-duration: 6s;
   animation-name: rotation;
+  transition: transform 0.5s;
 }
 
 img[alt="twitter"] {
@@ -426,8 +427,16 @@ img[alt="angellist"] {
 
 @keyframes rotation {
   to {
-    transform: rotate(1080deg);
+    transform: rotate(720deg);
   }
+}
+
+img[alt="twitter"]:hover,
+img[alt="linkedin"]:hover,
+img[alt="medium"]:hover,
+img[alt="github"]:hover,
+img[alt="angellist"]:hover {
+  transform: translateY(-10px) scale(1.5);
 }
 
 #introduction .title {
