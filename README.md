@@ -2,6 +2,8 @@
 
 # My Portfolio
 
+You can checkout my portfolio [here](https://akucintavalent.github.io/my-portfolio/).
+
 The site looks like this on a mobile device.
 
 ![screenshot](./images/app_screenshot_1.png)
