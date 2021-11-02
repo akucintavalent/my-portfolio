@@ -406,23 +406,23 @@ h2.title {
   transition: transform 0.5s;
 }
 
-img[alt="twitter"] {
+.icons li:nth-child(1) img {
   animation-delay: 0ms;
 }
 
-img[alt="linkedin"] {
+.icons li:nth-child(2) img {
   animation-delay: 1s;
 }
 
-img[alt="medium"] {
+.icons li:nth-child(3) img {
   animation-delay: 2s;
 }
 
-img[alt="github"] {
+.icons li:nth-child(4) img {
   animation-delay: 3s;
 }
 
-img[alt="angellist"] {
+.icons li:nth-child(5) img {
   animation-delay: 4s;
 }
 
