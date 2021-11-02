@@ -97,11 +97,12 @@ hr {
   margin: 0;
 }
 
-h1.title {
+h1.title,
+h2.title {
   color: #172b4d;
 }
 
-h2.title {
+#introduction h2 {
   color: #36b37f;
 }
 
