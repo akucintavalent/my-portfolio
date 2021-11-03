@@ -97,12 +97,13 @@ hr {
   margin: 0;
 }
 
-h1.title {
+h1.title,
+h2.title {
   color: #172b4d;
 }
 
-h2.title {
-  color: #36b37f;
+#introduction h2 {
+  color: #28865f;
 }
 
 .my-profession {
@@ -189,7 +190,7 @@ h2.title {
 }
 
 .see-project-button {
-  background: #36b37f;
+  background: #28865f;
   border-radius: 4px;
   display: flex;
   flex-direction: row;
@@ -199,7 +200,7 @@ h2.title {
   color: #fff;
   font-family: 'Inter', sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 17px;
   line-height: 24px;
   border: none;
@@ -320,11 +321,11 @@ h2.title {
   border-radius: 8px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  color: #36b37e;
+  color: #28865f;
 }
 
 .contact-me-section {
@@ -405,23 +406,23 @@ h2.title {
   transition: transform 0.5s;
 }
 
-img[alt="twitter"] {
+.icons li:nth-child(1) img {
   animation-delay: 0ms;
 }
 
-img[alt="linkedin"] {
+.icons li:nth-child(2) img {
   animation-delay: 1s;
 }
 
-img[alt="medium"] {
+.icons li:nth-child(3) img {
   animation-delay: 2s;
 }
 
-img[alt="github"] {
+.icons li:nth-child(4) img {
   animation-delay: 3s;
 }
 
-img[alt="angellist"] {
+.icons li:nth-child(5) img {
   animation-delay: 4s;
 }
 
