@@ -473,6 +473,39 @@ body {
   z-index: 1;
 }
 
+.popup .content {
+  position: absolute;
+  right: 0;
+  top: 10vh;
+  left: 9%;
+  z-index: 2;
+}
+
+.content a {
+  text-decoration: none;
+}
+
+.close-btn {
+  position: absolute;
+  right: 9%;
+  top: -5vh;
+
+}
+
+.close-btn a {
+  color: rgba(103, 121, 142, 1);
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.nav-links-mobile a {
+  font-family: 'Inter', sans-serif;
+  color: rgba(58, 74, 66, 1);
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 60px;
+}
+
 @media (min-width: 992px) {
   .nav-desktop {
     display: block;
