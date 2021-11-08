@@ -249,7 +249,8 @@ h2.title {
 
 #arrow_down_button_1,
 #contact-me-form-2,
-.nav-desktop {
+.nav-desktop,
+.visible {
   display: none;
 }
 
@@ -489,7 +490,6 @@ body {
   position: absolute;
   right: 9%;
   top: -5vh;
-
 }
 
 .close-btn a {
