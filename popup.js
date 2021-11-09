@@ -5,12 +5,12 @@ const links = document.querySelectorAll('.nav-mobile a');
 const openBtn = document.querySelector('i.fa-bars');
 
 function open () {
-  popup.classList.toggle('visible');
+  popup.classList.toggle('invisible');
   body.style.overflow = 'hidden';
 }
 
 function close () {
-  popup.classList.toggle('visible');
+  popup.classList.toggle('invisible');
   body.style.overflow = 'auto';
 }
 

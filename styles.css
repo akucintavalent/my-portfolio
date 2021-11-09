@@ -250,7 +250,7 @@ h2.title {
 #arrow_down_button_1,
 #contact-me-form-2,
 .nav-desktop,
-.visible {
+.invisible {
   display: none;
 }
 
@@ -482,7 +482,7 @@ body {
   height: 95vh;
   background: #fff;
   z-index: 1;
-  box-shadow: 0px 48px 48px 0px rgba(37, 47, 137, 0.08);
+  box-shadow: 0 48px 48px 0 rgba(37, 47, 137, 0.08);
   border-radius: 0 0 50px 50px;
 }
 
