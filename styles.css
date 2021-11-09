@@ -249,7 +249,8 @@ h2.title {
 
 #arrow_down_button_1,
 #contact-me-form-2,
-.nav-desktop {
+.nav-desktop,
+.invisible {
   display: none;
 }
 
@@ -463,7 +464,65 @@ body {
   }
 }
 
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  background-color: #fff;
+}
+
+.popup .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 95vh;
+  background: #fff;
+  z-index: 1;
+  box-shadow: 0 48px 48px 0 rgba(37, 47, 137, 0.08);
+  border-radius: 0 0 50px 50px;
+}
+
+.popup .content {
+  position: absolute;
+  right: 0;
+  top: 10vh;
+  left: 9%;
+  z-index: 2;
+}
+
+.content a {
+  text-decoration: none;
+}
+
+.close-btn {
+  position: absolute;
+  right: 9%;
+  top: -5vh;
+}
+
+.close-btn a {
+  color: rgba(103, 121, 142, 1);
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.nav-links-mobile a {
+  font-family: 'Inter', sans-serif;
+  color: rgba(58, 74, 66, 1);
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 60px;
+}
+
 @media (min-width: 992px) {
+  .popup {
+    display: none;
+  }
+
   .nav-desktop {
     display: block;
   }
