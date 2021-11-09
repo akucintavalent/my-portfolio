@@ -2,193 +2,234 @@
 <html lang="en">
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8VKL0V4BMK"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8VKL0V4BMK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-        gtag('config', 'G-8VKL0V4BMK');
-    </script>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dan's portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/c4f9b857f0.js" crossorigin="anonymous"></script>
+    gtag('config', 'G-8VKL0V4BMK');
+  </script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dan's portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/c4f9b857f0.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="popup invisible" id="popup">
-        <div class="overlay">
-            <div class="content">
-                <div class="close-btn">
-                    <a href="#">
-                        &times;
-                    </a>
-                </div>
-                <nav class="nav-mobile-modal">
-                    <ul class="nav-links-mobile">
-                        <li><a href="#projects-section">Portflio</a></li>
-                        <li><a href="#about-me-section">About</a></li>
-                        <li><a href="#contact-me-section">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
+  <div class="popup invisible" id="popup">
+    <div class="overlay">
+      <div class="content">
+        <div class="close-btn">
+          <a href="#">
+            &times;
+          </a>
         </div>
-    </div>
-    <header class="navigator-bar">
-        <div class="nav-mobile">
-            <a href="#" class="welcome-text">Welcome</a>
-            <nav>
-                <i class="fas fa-bars"></i>
-            </nav>
-        </div>
-        <nav class="nav-desktop">
-            <ul class="nav-links">
-                <li><a href="#projects-section">Portflio</a></li>
-                <li><a href="#about-me-section">About</a></li>
-                <li><a href="#contact-me-section">Contact</a></li>
-            </ul>
+        <nav class="nav-mobile-modal">
+          <ul class="nav-links-mobile">
+            <li><a href="#projects-section">Portflio</a></li>
+            <li><a href="#about-me-section">About</a></li>
+            <li><a href="#contact-me-section">Contact</a></li>
+          </ul>
         </nav>
-    </header>
-    <section class="welcome-section">
-        <div id="introduction">
-            <h1 class="title">
-                Hey there. I’m Dan
-            </h1>
-            <h2 class="title">
-                I’m a software developer
-            </h2>
+      </div>
+    </div>
+  </div>
+  <div class="project-popup invisible">
+    <div class="project-overlay">
+      <div class="project-content">
+        <div class="project-close-btn">
+          <div>
+            &times;
+          </div>
         </div>
-        <p class="my-profession">
-            I can help you build a product, feature or website Look through some of my work and experience! If you like
-            what you see and have a project you need coded,
-            don’t hestiate to contact me.
+        <div class="project-images">
+          <img class="project-image-mobile" src="./images/mobile/project-sample-mobile.png"
+            alt="Project site screenshot">
+          <img class="project-image-desktop" src="./images/desktop/project-sample-desktop.png"
+            alt="Project site screenshot">
+        </div>
+        <h3 class="project-title">Keeping track of hundreds of
+          components</h3>
+        <ul class="technologies">
+          <li class="tech">Ruby on rails</li>
+        </ul>
+        <p class="project-description-text">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+          standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s
+          with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+          the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+          scrambled it 1960s with the relea
         </p>
-        <ul class="icons">
-            <li><a href="#"><img class="twitter" src="./images/twitter.png" alt="Dan's twitter account"></a></li>
-            <li><a href="#"><img class="linkedin" src="./images/linkedin.png" alt="Dan's linkedin account"></a></li>
-            <li><a href="#"><img class="medium" src="./images/medium.png" alt="Dan's medium account"></a></li>
-            <li><a href="#"><img class="github" src="./images/github.png" alt="Dan's github account"></a></li>
-            <li><a href="#"><img class="angellist" src="./images/angellist.png" alt="Dan's angellist account"></a></li>
-        </ul>
-        <a href="#projects-section">
-            <img id="arrow_down_button_1" src="./images/desktop/arrow_down.png" alt="Arrow down button">
-        </a>
-    </section>
-    <section id="projects-section" class="projects-section">
-        <img id="arrow_down_button_2" src="./images/mobile/arrow_down_button.png" alt="">
-            <div class="projects-title-and-green-line">
-                <h2 class="title">My Recent Works</h2>
-                <span class="greenline">‾‾‾</span>
-            </div>
-            <div id="projects" class="projects">
-                <div id="project1" class="project">
-                    <div class="project-description">
-                        <div class="project-title">
-                            <h3>Multi-Post Stories Gain+Glory</h3>
-                        </div>
-                        <ul class="technologies">
-                            <li class="tech">Ruby on rails</li>
-                            <li class="tech">css</li>
-                            <li class="tech">JavaScript</li>
-                            <li class="tech">html</li>
-                        </ul>
-                        <div class="see-project">
-                            <button class="see-project-button">See Project</button>
-                        </div>
-                    </div>
-                </div>
-                <script src="index.js"></script>
-            </div>
-    </section>
-    <section id="about-me-section" class="about-me-section">
-        <div class="about-me">
-            <h2 class="title">About me</h2>
-            <p class="my-profession">
-                I can help you build a product, feature or website Look through some of my work and experience! If you
-                like what you see and have a project you need coded,
-                don’t hestiate to contact me.
-            </p>
-            <div class="see-project">
-                <button class="see-project-button">Get My Resume</button>
-            </div>
+        <div class="see-project" id="live-button">
+          <button class="see-project-button">
+            See live
+            <img src="./images/live-icon.png" alt="">
+          </button>
         </div>
-        <ul class="skills-section">
-            <li class="skills">
-                <img src="./images/icon-languages.png" alt="">
-                <h3 class="skills-title">Languages</h3>
-                <ul class="skills-list">
-                    <li class="skill-item">JavaScript</li>
-                    <li class="skill-item">Ruby</li>
-                    <li class="skill-item">HTML</li>
-                    <li class="skill-item">CSS</li>
-                </ul>
-            </li>
-            <li class="skills">
-                <img src="./images/icon-frameworks.png" alt="">
-                <h3 class="skills-title">Frameworks</h3>
-                <ul class="skills-list">
-                    <li class="skill-item">Bootstrap</li>
-                    <li class="skill-item">Ruby on rails</li>
-                    <li class="skill-item">RSpec</li>
-                    <li class="skill-item">Capybara</li>
-                    <li class="skill-item">Selenium</li>
-                </ul>
-            </li>
-            <li class="skills">
-                <img src="./images/icon-skills.png" alt="">
-                <h3 class="skills-title">Skills</h3>
-                <ul class="skills-list">
-                    <li class="skill-item">Codekit</li>
-                    <li class="skill-item">GitHub</li>
-                    <li class="skill-item">Codepen</li>
-                    <li class="skill-item">Gitlab</li>
-                    <li class="skill-item">Terminal</li>
-                </ul>
-            </li>
+        <div class="see-project" id="source-button">
+          <button class="see-project-button">
+            See Source
+            <img src="./images/source-icon.png" alt="">
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <header class="navigator-bar">
+    <div class="nav-mobile">
+      <a href="#" class="welcome-text">Welcome</a>
+      <nav>
+        <i class="fas fa-bars"></i>
+      </nav>
+    </div>
+    <nav class="nav-desktop">
+      <ul class="nav-links">
+        <li><a href="#projects-section">Portflio</a></li>
+        <li><a href="#about-me-section">About</a></li>
+        <li><a href="#contact-me-section">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="welcome-section">
+    <div id="introduction">
+      <h1 class="title">
+        Hey there. I’m Dan
+      </h1>
+      <h2 class="title">
+        I’m a software developer
+      </h2>
+    </div>
+    <p class="my-profession">
+      I can help you build a product, feature or website Look through some of my work and experience! If you like
+      what you see and have a project you need coded,
+      don’t hestiate to contact me.
+    </p>
+    <ul class="icons">
+      <li><a href="#"><img class="twitter" src="./images/icons/twitter.png" alt="Dan's twitter account"></a></li>
+      <li><a href="#"><img class="linkedin" src="./images/icons/linkedin.png" alt="Dan's linkedin account"></a></li>
+      <li><a href="#"><img class="medium" src="./images/icons/medium.png" alt="Dan's medium account"></a></li>
+      <li><a href="#"><img class="github" src="./images/icons/github.png" alt="Dan's github account"></a></li>
+      <li><a href="#"><img class="angellist" src="./images/icons/angellist.png" alt="Dan's angellist account"></a></li>
+    </ul>
+    <a href="#projects-section">
+      <img id="arrow_down_button_1" src="./images/desktop/arrow_down.png" alt="Arrow down button">
+    </a>
+  </section>
+  <section id="projects-section" class="projects-section">
+    <img id="arrow_down_button_2" src="./images/mobile/arrow_down_button.png" alt="">
+    <div class="projects-title-and-green-line">
+      <h2 class="title">My Recent Works</h2>
+      <span class="greenline">‾‾‾</span>
+    </div>
+    <div id="projects" class="projects">
+      <div id="project1" class="project">
+        <img class="project-image" src="./images/projects/project_card_1.png" alt="Topic project card">
+        <div class="project-description">
+          <div class="project-title">
+            <h3>Multi-Post Stories Gain+Glory</h3>
+          </div>
+          <ul class="technologies">
+            <li class="tech">Ruby on rails</li>
+          </ul>
+          <div class="see-project">
+            <button class="see-project-button">See Project</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="about-me-section" class="about-me-section">
+    <div class="about-me">
+      <h2 class="title">About me</h2>
+      <p class="my-profession">
+        I can help you build a product, feature or website Look through some of my work and experience! If you
+        like what you see and have a project you need coded,
+        don’t hestiate to contact me.
+      </p>
+      <div class="see-project">
+        <button class="see-project-button">Get My Resume</button>
+      </div>
+    </div>
+    <ul class="skills-section">
+      <li class="skills">
+        <img src="./images/skills/icon-languages.png" alt="">
+        <h3 class="skills-title">Languages</h3>
+        <ul class="skills-list">
+          <li class="skill-item">JavaScript</li>
+          <li class="skill-item">Ruby</li>
+          <li class="skill-item">HTML</li>
+          <li class="skill-item">CSS</li>
         </ul>
-    </section>
-    <footer id="contact-me-section" class="contact-me-section">
-        <h2 class="title">
-            I'm always interested in hearing about new projects,
-            so if you'd like to chat please get in touch.
-        </h2>
-        <form action="https://formspree.io/f/mdoyvbjr" method="POST" id="contact-me-form-1">
-            <input maxlength="30" type="text" name="name" id="name-mobile" class="form-input" placeholder="Full name" required>
-            <input type="email" name="email" id="email-mobile" class="form-input" placeholder="Email address" required>
-            <textarea maxlength="500" id="message-mobile" class="textarea-input" name="message" placeholder="Enter text here"
-                required></textarea>
-            <div class="see-project">
-                <button type="submit" class="see-project-button">Get in touch</button>
-            </div>
-        </form>
-        <form action="https://formspree.io/f/mdoyvbjr" method="POST" id="contact-me-form-2">
-            <p class="contact-me-text">
-                I'm always interested in hearing about new projects,
-                so if you'd like to chat please get in touch.
-            </p>
-            <input maxlength="30" type="text" name="name" id="name-desktop" class="form-input" placeholder="Full name" required>
-            <input type="email" name="email" id="email-desktop" class="form-input" placeholder="Email address" required>
-            <textarea maxlength="500" id="message-desktop" class="textarea-input" name="message" placeholder="Typing something"
-                required></textarea>
-            <div class="see-project">
-                <button type="submit" class="see-project-button">Get in touch</button>
-            </div>
-        </form>
-        <ul class="icons">
-            <li><a href="#"><img src="./images/twitter.png" alt="Dan's twitter account"></a></li>
-            <li><a href="#"><img src="./images/linkedin.png" alt="Dan's linkedin account"></a></li>
-            <li><a href="#"><img src="./images/medium.png" alt="Dan's medium account"></a></li>
-            <li><a href="#"><img src="./images/github.png" alt="Dan's github account"></a></li>
-            <li><a href="#"><img src="./images/angellist.png" alt="Dan's angellist account"></a></li>
+      </li>
+      <li class="skills">
+        <img src="./images/skills/icon-frameworks.png" alt="">
+        <h3 class="skills-title">Frameworks</h3>
+        <ul class="skills-list">
+          <li class="skill-item">Bootstrap</li>
+          <li class="skill-item">Ruby on rails</li>
+          <li class="skill-item">RSpec</li>
+          <li class="skill-item">Capybara</li>
+          <li class="skill-item">Selenium</li>
         </ul>
-        <a class="footer-email" href="mailto:myemailhere@email.com" target="_blank">myemailhere@email.com</a>
-        <hr class="footer-line">
-    </footer>
-    <script src="popup.js"></script>
+      </li>
+      <li class="skills">
+        <img src="./images/skills/icon-skills.png" alt="">
+        <h3 class="skills-title">Skills</h3>
+        <ul class="skills-list">
+          <li class="skill-item">Codekit</li>
+          <li class="skill-item">GitHub</li>
+          <li class="skill-item">Codepen</li>
+          <li class="skill-item">Gitlab</li>
+          <li class="skill-item">Terminal</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+  <footer id="contact-me-section" class="contact-me-section">
+    <h2 class="title">
+      I'm always interested in hearing about new projects,
+      so if you'd like to chat please get in touch.
+    </h2>
+    <form action="https://formspree.io/f/mdoyvbjr" method="POST" id="contact-me-form-1">
+      <input maxlength="30" type="text" name="name" id="name-mobile" class="form-input" placeholder="Full name"
+        required>
+      <input type="email" name="email" id="email-mobile" class="form-input" placeholder="Email address" required>
+      <textarea maxlength="500" id="message-mobile" class="textarea-input" name="message" placeholder="Enter text here"
+        required></textarea>
+      <div class="see-project">
+        <button type="submit" class="see-project-button">Get in touch</button>
+      </div>
+    </form>
+    <form action="https://formspree.io/f/mdoyvbjr" method="POST" id="contact-me-form-2">
+      <p class="contact-me-text">
+        I'm always interested in hearing about new projects,
+        so if you'd like to chat please get in touch.
+      </p>
+      <input maxlength="30" type="text" name="name" id="name-desktop" class="form-input" placeholder="Full name"
+        required>
+      <input type="email" name="email" id="email-desktop" class="form-input" placeholder="Email address" required>
+      <textarea maxlength="500" id="message-desktop" class="textarea-input" name="message"
+        placeholder="Typing something" required></textarea>
+      <div class="see-project">
+        <button type="submit" class="see-project-button">Get in touch</button>
+      </div>
+    </form>
+    <ul class="icons">
+      <li><a href="#"><img src="./images/icons/twitter.png" alt="Dan's twitter account"></a></li>
+      <li><a href="#"><img src="./images/icons/linkedin.png" alt="Dan's linkedin account"></a></li>
+      <li><a href="#"><img src="./images/icons/medium.png" alt="Dan's medium account"></a></li>
+      <li><a href="#"><img src="./images/icons/github.png" alt="Dan's github account"></a></li>
+      <li><a href="#"><img src="./images/icons/angellist.png" alt="Dan's angellist account"></a></li>
+    </ul>
+    <a class="footer-email" href="mailto:myemailhere@email.com" target="_blank">myemailhere@email.com</a>
+    <hr class="footer-line">
+  </footer>
+  <script src="./js/popup-menu.js"></script>
+  <script type="module" src="./js/copy-project-cards.js"></script>
 </body>
 
 </html>
