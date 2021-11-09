@@ -152,7 +152,6 @@ h2.title {
   background: #ebf0ee;
   height: auto;
   max-width: 333px;
-  width: auto;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -283,7 +282,6 @@ h2.title {
   height: auto;
   max-width: 333px;
   margin: 0 auto;
-  width: auto;
   gap: 20px;
   background: #ebf0ee;
   border: 1px solid #c1c7d0;
