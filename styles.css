@@ -510,6 +510,109 @@ body {
   font-weight: 600;
 }
 
+.project-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+
+.project-popup .project-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(193, 199, 208, 0.3);
+  z-index: 1;
+  overflow-y: scroll;
+}
+
+.project-popup .project-content {
+  position: relative;
+  background: #fff;
+  width: 90vw;
+  height: auto;
+  margin: 8vh auto;
+  z-index: 2;
+  border-radius: 18px;
+  display: grid;
+  grid-gap: 15px;
+  padding: 18px;
+  grid-template-areas:
+    'image image'
+    'title title'
+    'tags tags'
+    'text text'
+    'live-button source-button';
+}
+
+.project-popup .project-close-btn {
+  grid-area: close-button;
+  position: absolute;
+  right: 36px;
+  top: 26px;
+  z-index: 3;
+}
+
+.project-close-btn a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 35px;
+}
+
+.project-popup .project-images {
+  grid-area: image;
+}
+
+.project-image-mobile {
+  width: 100%;
+}
+
+.project-image-desktop {
+  display: none;
+}
+
+.project-popup .project-title {
+  font-size: 32px;
+  text-align: left;
+  color: rgba(23, 43, 77, 1);
+
+}
+
+.project-popup h3 {
+  grid-area: title;
+}
+
+.project-popup .technologies {
+  grid-area: tags;
+}
+
+.project-description-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(52, 69, 99, 1);
+}
+
+.project-popup .project-description-text {
+  grid-area: text;
+}
+
+#live-button {
+  grid-area: live-button;
+}
+
+#source-button {
+  grid-area: source-button;
+}
+
+.project-popup .see-project-button {
+  font-weight: 400;
+}
+
 .nav-links-mobile a {
   font-family: 'Inter', sans-serif;
   color: rgba(58, 74, 66, 1);
@@ -521,6 +624,48 @@ body {
 @media (min-width: 992px) {
   .popup {
     display: none;
+  }
+
+  .project-popup .project-content {
+    position: static;
+    width: 75vw;
+    grid-gap: 15px;
+    padding: 25px 20px;
+    grid-template-areas:
+      '. . close-button'
+      'image image image'
+      'title live-button source-button'
+      'title . .'
+      'tags . .'
+      'text text text';
+    grid-template-columns: 1fr 150px 150px;
+  }
+
+  .project-close-btn {
+    grid-area: close-button;
+    position: static;
+    z-index: 3;
+  }
+
+  .project-close-btn a {
+    color: rgba(103, 121, 142, 1);
+  }
+
+  .project-image-mobile {
+    display: none;
+  }
+
+  .project-image-desktop {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .project-popup .technologies {
+    justify-content: flex-start;
+  }
+
+  .project-popup .tech {
+    margin-right: 10px;
   }
 
   .nav-desktop {
