@@ -38,13 +38,13 @@
       </div>
     </div>
   </div>
-  <div class="project-popup">
+  <div class="project-popup invisible">
     <div class="project-overlay">
       <div class="project-content">
         <div class="project-close-btn">
-          <a href="#">
+          <div>
             &times;
-          </a>
+          </div>
         </div>
         <div class="project-images">
           <img class="project-image-mobile" src="./images/mobile/project-sample-mobile.png"
@@ -56,9 +56,6 @@
           components</h3>
         <ul class="technologies">
           <li class="tech">Ruby on rails</li>
-          <li class="tech">css</li>
-          <li class="tech">JavaScript</li>
-          <li class="tech">html</li>
         </ul>
         <p class="project-description-text">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
@@ -69,13 +66,13 @@
         </p>
         <div class="see-project" id="live-button">
           <button class="see-project-button">
-            See Project
+            See live
             <img src="./images/live-icon.png" alt="">
           </button>
         </div>
         <div class="see-project" id="source-button">
           <button class="see-project-button">
-            See Project
+            See Source
             <img src="./images/source-icon.png" alt="">
           </button>
         </div>
@@ -112,11 +109,11 @@
       don’t hestiate to contact me.
     </p>
     <ul class="icons">
-      <li><a href="#"><img class="twitter" src="./images/twitter.png" alt="Dan's twitter account"></a></li>
-      <li><a href="#"><img class="linkedin" src="./images/linkedin.png" alt="Dan's linkedin account"></a></li>
-      <li><a href="#"><img class="medium" src="./images/medium.png" alt="Dan's medium account"></a></li>
-      <li><a href="#"><img class="github" src="./images/github.png" alt="Dan's github account"></a></li>
-      <li><a href="#"><img class="angellist" src="./images/angellist.png" alt="Dan's angellist account"></a></li>
+      <li><a href="#"><img class="twitter" src="./images/icons/twitter.png" alt="Dan's twitter account"></a></li>
+      <li><a href="#"><img class="linkedin" src="./images/icons/linkedin.png" alt="Dan's linkedin account"></a></li>
+      <li><a href="#"><img class="medium" src="./images/icons/medium.png" alt="Dan's medium account"></a></li>
+      <li><a href="#"><img class="github" src="./images/icons/github.png" alt="Dan's github account"></a></li>
+      <li><a href="#"><img class="angellist" src="./images/icons/angellist.png" alt="Dan's angellist account"></a></li>
     </ul>
     <a href="#projects-section">
       <img id="arrow_down_button_1" src="./images/desktop/arrow_down.png" alt="Arrow down button">
@@ -130,22 +127,19 @@
     </div>
     <div id="projects" class="projects">
       <div id="project1" class="project">
+        <img class="project-image" src="./images/projects/project_card_1.png" alt="Topic project card">
         <div class="project-description">
           <div class="project-title">
             <h3>Multi-Post Stories Gain+Glory</h3>
           </div>
           <ul class="technologies">
             <li class="tech">Ruby on rails</li>
-            <li class="tech">css</li>
-            <li class="tech">JavaScript</li>
-            <li class="tech">html</li>
           </ul>
           <div class="see-project">
             <button class="see-project-button">See Project</button>
           </div>
         </div>
       </div>
-      <script src="index.js"></script>
     </div>
   </section>
   <section id="about-me-section" class="about-me-section">
@@ -162,7 +156,7 @@
     </div>
     <ul class="skills-section">
       <li class="skills">
-        <img src="./images/icon-languages.png" alt="">
+        <img src="./images/skills/icon-languages.png" alt="">
         <h3 class="skills-title">Languages</h3>
         <ul class="skills-list">
           <li class="skill-item">JavaScript</li>
@@ -172,7 +166,7 @@
         </ul>
       </li>
       <li class="skills">
-        <img src="./images/icon-frameworks.png" alt="">
+        <img src="./images/skills/icon-frameworks.png" alt="">
         <h3 class="skills-title">Frameworks</h3>
         <ul class="skills-list">
           <li class="skill-item">Bootstrap</li>
@@ -183,7 +177,7 @@
         </ul>
       </li>
       <li class="skills">
-        <img src="./images/icon-skills.png" alt="">
+        <img src="./images/skills/icon-skills.png" alt="">
         <h3 class="skills-title">Skills</h3>
         <ul class="skills-list">
           <li class="skill-item">Codekit</li>
@@ -225,16 +219,17 @@
       </div>
     </form>
     <ul class="icons">
-      <li><a href="#"><img src="./images/twitter.png" alt="Dan's twitter account"></a></li>
-      <li><a href="#"><img src="./images/linkedin.png" alt="Dan's linkedin account"></a></li>
-      <li><a href="#"><img src="./images/medium.png" alt="Dan's medium account"></a></li>
-      <li><a href="#"><img src="./images/github.png" alt="Dan's github account"></a></li>
-      <li><a href="#"><img src="./images/angellist.png" alt="Dan's angellist account"></a></li>
+      <li><a href="#"><img src="./images/icons/twitter.png" alt="Dan's twitter account"></a></li>
+      <li><a href="#"><img src="./images/icons/linkedin.png" alt="Dan's linkedin account"></a></li>
+      <li><a href="#"><img src="./images/icons/medium.png" alt="Dan's medium account"></a></li>
+      <li><a href="#"><img src="./images/icons/github.png" alt="Dan's github account"></a></li>
+      <li><a href="#"><img src="./images/icons/angellist.png" alt="Dan's angellist account"></a></li>
     </ul>
     <a class="footer-email" href="mailto:myemailhere@email.com" target="_blank">myemailhere@email.com</a>
     <hr class="footer-line">
   </footer>
-  <script src="popup.js"></script>
+  <script src="./js/popup-menu.js"></script>
+  <script type="module" src="./js/copy-project-cards.js"></script>
 </body>
 
 </html>

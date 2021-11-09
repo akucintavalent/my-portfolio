@@ -4,20 +4,20 @@ const closeBtn = document.querySelector('.close-btn');
 const links = document.querySelectorAll('.nav-mobile-modal a');
 const openBtn = document.querySelector('i.fa-bars');
 
-function open() {
+function openMenu() {
   popup.classList.toggle('invisible');
   body.style.overflow = 'hidden';
 }
 
-function close() {
+function closeMenu() {
   popup.classList.toggle('invisible');
   body.style.overflow = 'auto';
 }
 
-openBtn.addEventListener('click', open);
+openBtn.addEventListener('click', openMenu);
 
-closeBtn.addEventListener('click', close);
+closeBtn.addEventListener('click', closeMenu);
 
 links.forEach((link) => {
-  link.addEventListener('click', close);
+  link.addEventListener('click', closeMenu);
 });

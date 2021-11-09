@@ -135,6 +135,9 @@ h2.title {
 .projects-section {
   padding: 26px;
   background: url("./images/mobile/cylinder_2_page_top_right.png") top right no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .projects {
@@ -147,21 +150,22 @@ h2.title {
   border: 1px solid #d0d9d4;
   border-radius: 8px;
   background: #ebf0ee;
-  height: 474px;
+  height: auto;
+  max-width: 333px;
+  width: 100%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: end;
-  transition: transform 0.5s;
-}
-
-.project:hover {
-  transform: perspective(200px) translateZ(10px);
+  align-self: center;
 }
 
 .technologies {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-evenly;
+  gap: 10px;
+  justify-content: center;
   width: 100%;
 }
 
@@ -229,7 +233,9 @@ h2.title {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  height: 222px;
+  height: auto;
+  gap: 10px;
+  padding: 20px 10px;
   align-items: center;
   background: #fff;
   border-radius: 8px;
@@ -255,6 +261,7 @@ h2.title {
 }
 
 #arrow_down_button_2 {
+  display: inline-block;
   margin-bottom: 17px;
   animation-duration: 2s;
   animation-name: wave;
@@ -273,8 +280,11 @@ h2.title {
 }
 
 .skills {
-  height: 50vh;
+  height: auto;
+  max-width: 333px;
+  margin: 0 auto;
   width: 100%;
+  gap: 20px;
   background: #ebf0ee;
   border: 1px solid #c1c7d0;
   box-sizing: border-box;
@@ -510,6 +520,12 @@ body {
   font-weight: 600;
 }
 
+.project-image {
+  object-fit: cover;
+  max-height: 222px;
+  max-width: 100%;
+}
+
 .project-popup {
   position: fixed;
   top: 0;
@@ -526,6 +542,7 @@ body {
   width: 100vw;
   height: 100vh;
   background: rgba(193, 199, 208, 0.3);
+  backdrop-filter: blur(5px);
   z-index: 1;
   overflow-y: scroll;
 }
@@ -557,10 +574,11 @@ body {
   z-index: 3;
 }
 
-.project-close-btn a {
+.project-close-btn div {
   text-decoration: none;
   color: #fff;
   font-size: 35px;
+  cursor: pointer;
 }
 
 .project-popup .project-images {
@@ -579,7 +597,6 @@ body {
   font-size: 32px;
   text-align: left;
   color: rgba(23, 43, 77, 1);
-
 }
 
 .project-popup h3 {
@@ -588,6 +605,7 @@ body {
 
 .project-popup .technologies {
   grid-area: tags;
+  justify-content: flex-start;
 }
 
 .project-description-text {
@@ -613,6 +631,10 @@ body {
   font-weight: 400;
 }
 
+.project-popup .tech {
+  margin-right: 10px;
+}
+
 .nav-links-mobile a {
   font-family: 'Inter', sans-serif;
   color: rgba(58, 74, 66, 1);
@@ -631,6 +653,7 @@ body {
     width: 75vw;
     grid-gap: 15px;
     padding: 25px 20px;
+    margin: 15vh auto;
     grid-template-areas:
       '. . close-button'
       'image image image'
@@ -641,14 +664,23 @@ body {
     grid-template-columns: 1fr 150px 150px;
   }
 
-  .project-close-btn {
-    grid-area: close-button;
+  .project-popup .project-close-btn {
     position: static;
+    display: flex;
+    justify-content: end;
     z-index: 3;
   }
 
-  .project-close-btn a {
+  .project-popup .project-close-btn div {
     color: rgba(103, 121, 142, 1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: #ebecf0;
+    border-radius: 8px;
   }
 
   .project-image-mobile {
@@ -658,14 +690,6 @@ body {
   .project-image-desktop {
     display: inline-block;
     width: 100%;
-  }
-
-  .project-popup .technologies {
-    justify-content: flex-start;
-  }
-
-  .project-popup .tech {
-    margin-right: 10px;
   }
 
   .nav-desktop {
@@ -810,6 +834,11 @@ body {
 
   .project {
     width: auto;
+    transition: transform 0.5s;
+  }
+
+  .project:hover {
+    transform: perspective(200px) translateZ(10px);
   }
 
   .skills {
@@ -825,7 +854,7 @@ body {
   }
 
   .project-title {
-    width: 70%;
+    max-width: 70%;
   }
 
   .contact-me-section .title,
