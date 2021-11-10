@@ -6,18 +6,14 @@ You can checkout my portfolio [here](https://akucintavalent.github.io/my-portfol
 
 The site looks like this on a mobile device.
 
-![screenshot](./images/readme/app_screenshot_1.png)
-![screenshot](./images/readme/app_screenshot_2.png)
-![screenshot](./images/readme/app_screenshot_3.png)
-![screenshot](./images/readme/app_screenshot_4.png)
-![screenshot](./images/readme/app_screenshot_9.png)
+![screenshot](./images/readme/mobile-screenshot.png)
+![screenshot](./images/readme/mobile-menu-screenshot.png)
+![screenshot](./images/readme/mobile-popup-screenshot.png)
 
 The site looks like this on desktop
 
-![screenshot](./images/readme/app_screenshot_5.png)
-![screenshot](./images/readme/app_screenshot_6.png)
-![screenshot](./images/readme/app_screenshot_7.png)
-![screenshot](./images/readme/app_screenshot_8.png)
+![screenshot](./images/readme/desktop-screenshot.png)
+![screenshot](./images/readme/desktop-popup-screenshot.png)
 
 ## Built With
 
