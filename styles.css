@@ -441,12 +441,8 @@ h2.title {
   }
 }
 
-img[alt="twitter"]:hover,
-img[alt="linkedin"]:hover,
-img[alt="medium"]:hover,
-img[alt="github"]:hover,
-img[alt="angellist"]:hover {
-  transform: translateY(-10px) scale(1.5);
+.icons img:hover {
+  transform: translateY(-5px) scale(1.5);
 }
 
 #introduction .title {
