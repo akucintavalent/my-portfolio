@@ -1,10 +1,9 @@
-const inputNameMobile = document.querySelector('name-mobile');
-const inputEmailMobile = document.querySelector('email-mobile');
-const inputMessageMobile = document.querySelector('message-mobile');
-
-const inputNameDesktop = document.querySelector('name-desktop');
-const inputEmailDesktop = document.querySelector('email-desktop');
-const inputMessageDesktop = document.querySelector('message-desktop');
+const inputNameMobile = document.querySelector('#name-mobile');
+const inputEmailMobile = document.querySelector('#email-mobile');
+const inputMessageMobile = inputNameMobile.parentNode.querySelector('textarea');
+const inputNameDesktop = document.querySelector('#name-desktop');
+const inputEmailDesktop = document.querySelector('#email-desktop');
+const inputMessageDesktop = inputNameDesktop.parentNode.querySelector('textarea');
 
 function storageAvailable(type = 'localStorage') {
   let storage;
@@ -52,7 +51,7 @@ function populateStorage() {
       const formData = {
         name: inputNameDesktop.value,
         email: inputEmailDesktop.value,
-        msg: inputMessageDesktop.value,
+        message: inputMessageDesktop.value,
       };
       const formDataStr = JSON.stringify(formData);
       localStorage.setItem('formData', formDataStr);
@@ -61,10 +60,24 @@ function populateStorage() {
       const formData = {
         name: inputNameMobile.value,
         email: inputEmailMobile.value,
-        msg: inputMessageMobile.value,
+        message: inputMessageMobile.value,
       };
       const formDataStr = JSON.stringify(formData);
       localStorage.setItem('formData', formDataStr);
     }
   }
 }
+
+inputNameMobile.onchange = populateStorage;
+inputEmailMobile.onchange = populateStorage;
+inputMessageMobile.onchange = populateStorage;
+inputNameMobile.onkeyup = populateStorage;
+inputEmailMobile.onkeyup = populateStorage;
+inputMessageMobile.onkeyup = populateStorage;
+
+inputNameDesktop.onchange = populateStorage;
+inputEmailDesktop.onchange = populateStorage;
+inputMessageDesktop.onchange = populateStorage;
+inputNameDesktop.onkeyup = populateStorage;
+inputEmailDesktop.onkeyup = populateStorage;
+inputMessageDesktop.onkeyup = populateStorage;
