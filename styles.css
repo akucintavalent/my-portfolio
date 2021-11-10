@@ -412,7 +412,6 @@ h2.title {
 .icons img {
   animation-duration: 6s;
   animation-name: rotation;
-  transition: transform 0.5s;
 }
 
 .icons li:nth-child(1) img {
@@ -439,10 +438,6 @@ h2.title {
   to {
     transform: rotate(720deg);
   }
-}
-
-.icon:hover {
-  transform: translateY(-5px) scale(1.5);
 }
 
 #introduction .title {
