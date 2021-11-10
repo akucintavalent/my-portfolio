@@ -253,7 +253,7 @@ h2.title {
 }
 
 #arrow_down_button_1,
-#contact-me-form-2,
+.contact-me-form-desktop,
 .nav-desktop,
 .invisible {
   display: none;
@@ -342,7 +342,7 @@ h2.title {
   height: auto;
 }
 
-#contact-me-form-1 {
+.contact-me-form-mobile {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -412,7 +412,6 @@ h2.title {
 .icons img {
   animation-duration: 6s;
   animation-name: rotation;
-  transition: transform 0.5s;
 }
 
 .icons li:nth-child(1) img {
@@ -439,14 +438,6 @@ h2.title {
   to {
     transform: rotate(720deg);
   }
-}
-
-img[alt="twitter"]:hover,
-img[alt="linkedin"]:hover,
-img[alt="medium"]:hover,
-img[alt="github"]:hover,
-img[alt="angellist"]:hover {
-  transform: translateY(-10px) scale(1.5);
 }
 
 #introduction .title {
@@ -856,7 +847,7 @@ body {
   }
 
   .contact-me-section .title,
-  #contact-me-form-1,
+  .contact-me-form-mobile,
   .greenline,
   #arrow_down_button_2,
   .nav-mobile,
@@ -877,25 +868,25 @@ body {
     align-items: center;
   }
 
-  .contact-me-form-2 #name {
+  .contact-me-form-desktop #name {
     grid-area: name;
   }
 
-  #contact-me-form-2 > input[type="email"] {
+  #email-desktop {
     grid-area: email;
   }
 
-  #contact-me-form-2 textarea {
+  .contact-me-form-desktop textarea {
     grid-area: message;
   }
 
-  #contact-me-form-2 .see-project {
+  .contact-me-form-desktop .see-project {
     grid-area: button;
     display: flex;
     justify-content: start;
   }
 
-  #contact-me-form-2 {
+  .contact-me-form-desktop {
     display: grid;
     grid-template-areas:
       'contact-me-text name'
