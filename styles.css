@@ -441,7 +441,7 @@ h2.title {
   }
 }
 
-.icons li img:hover {
+.icons > li > img:hover {
   transform: translateY(-5px) scale(1.5);
 }
 
