@@ -357,11 +357,11 @@ h2.title {
   background: #fff;
   border: 1px solid #d0d9d4;
   box-sizing: border-box;
+  padding-left: 15px;
   border-radius: 4px;
 }
 
 .form-input::placeholder {
-  padding: 15px 16px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -377,11 +377,11 @@ h2.title {
   background: #fff;
   border: 1px solid #60c095;
   box-sizing: border-box;
+  padding: 15px;
   border-radius: 4px;
 }
 
 .textarea-input::placeholder {
-  padding: 15px 16px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: normal;
