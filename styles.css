@@ -362,7 +362,6 @@ h2.title {
 }
 
 .form-input::placeholder {
-  padding: 15px 16px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -383,7 +382,6 @@ h2.title {
 }
 
 .textarea-input::placeholder {
-  padding: 15px 16px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: normal;

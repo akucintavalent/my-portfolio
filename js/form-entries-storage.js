@@ -47,7 +47,7 @@ function isHidden(el) {
 
 function populateStorage() {
   if (storageAvailable()) {
-    if (!isHidden(inputNameDesktop)) {
+    if (!isHidden(inputNameDesktop.parentNode)) {
       const formData = {
         name: inputNameDesktop.value,
         email: inputEmailDesktop.value,
@@ -56,7 +56,7 @@ function populateStorage() {
       const formDataStr = JSON.stringify(formData);
       localStorage.setItem('formData', formDataStr);
     }
-    if (!isHidden(inputNameMobile)) {
+    if (!isHidden(inputNameMobile.parentNode)) {
       const formData = {
         name: inputNameMobile.value,
         email: inputEmailMobile.value,
