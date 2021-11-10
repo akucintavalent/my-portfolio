@@ -357,6 +357,7 @@ h2.title {
   background: #fff;
   border: 1px solid #d0d9d4;
   box-sizing: border-box;
+  padding-left: 15px;
   border-radius: 4px;
 }
 
@@ -377,6 +378,7 @@ h2.title {
   background: #fff;
   border: 1px solid #60c095;
   box-sizing: border-box;
+  padding: 15px;
   border-radius: 4px;
 }
 
