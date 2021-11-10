@@ -253,7 +253,7 @@ h2.title {
 }
 
 #arrow_down_button_1,
-#contact-me-form-2,
+#contact-me-form-desktop,
 .nav-desktop,
 .invisible {
   display: none;
@@ -342,7 +342,7 @@ h2.title {
   height: auto;
 }
 
-#contact-me-form-1 {
+#contact-me-form-mobile {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -856,7 +856,7 @@ body {
   }
 
   .contact-me-section .title,
-  #contact-me-form-1,
+  #contact-me-form-mobile,
   .greenline,
   #arrow_down_button_2,
   .nav-mobile,
@@ -877,25 +877,25 @@ body {
     align-items: center;
   }
 
-  .contact-me-form-2 #name {
+  .contact-me-form-desktop #name {
     grid-area: name;
   }
 
-  #contact-me-form-2 > input[type="email"] {
+  #contact-me-form-desktop > input[type="email"] {
     grid-area: email;
   }
 
-  #contact-me-form-2 textarea {
+  #contact-me-form-desktop textarea {
     grid-area: message;
   }
 
-  #contact-me-form-2 .see-project {
+  #contact-me-form-desktop .see-project {
     grid-area: button;
     display: flex;
     justify-content: start;
   }
 
-  #contact-me-form-2 {
+  #contact-me-form-desktop {
     display: grid;
     grid-template-areas:
       'contact-me-text name'
