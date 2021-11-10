@@ -881,7 +881,7 @@ body {
     grid-area: name;
   }
 
-  #contact-me-form-desktop > input[type="email"] {
+  #email-desktop {
     grid-area: email;
   }
 
