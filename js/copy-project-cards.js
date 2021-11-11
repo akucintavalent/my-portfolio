@@ -21,7 +21,7 @@ for (let i = 0; i < projects.length; i += 1) {
   img.setAttribute('src', projects[i].imageSrc);
   // set the title of the project card
   const title = projectElClone.querySelector('h3');
-  title.innerText = projects[i].title;
+  title.innreText = projects[i].title;
   // set the tags of the project card
   const technologies = projectElClone.querySelector('.technologies');
   const tech = projectElClone.querySelector('.tech');
@@ -49,7 +49,6 @@ for (let i = 0; i < projects.length; i += 1) {
     // set the tags of the project popup card
     const bigTechnologies = projectPopup.querySelector('.technologies');
     const bigTech = projectPopup.querySelector('.tech');
-    bigTechnologies.innerHTML = '';
     for (let j = 0; j < projects[i].tags.length; j += 1) {
       const techClone = bigTech.cloneNode(true);
       techClone.innerText = projects[i].tags[j];

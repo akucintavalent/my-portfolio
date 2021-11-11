@@ -3,7 +3,7 @@ const emailDesktop = document.querySelector('#email-desktop');
 
 function emailValidate(event) {
   const email = event.target;
-  if (email.validity.patternMismatch) {
+  if (email.validity.pattrenMismatch) {
     email.setCustomValidity('Email must not contain uppercase characters');
   } else {
     email.setCustomValidity('');
