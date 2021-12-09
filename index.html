@@ -197,8 +197,7 @@
     <form action="https://formspree.io/f/mdoyvbjr" method="POST" class="contact-me-form-mobile">
       <input maxlength="30" type="text" name="name" id="name-mobile" class="form-input" placeholder="Full name"
         required>
-      <input type="text"
-        pattern="^(?=.{1,64}@)[a-z0-9_-]+(\\.[a-z0-9_-]+)*@[^-][a-z0-9-]+(\\.[a-z0-9-]+)*(\\.[a-z]{2,})$" name="email"
+      <input type="email" name="email"
         id="email-mobile" class="form-input" placeholder="Email address" required>
       <textarea maxlength="500" id="message-mobile" class="textarea-input" name="message" placeholder="Enter text here"
         required></textarea>
@@ -213,8 +212,7 @@
       </p>
       <input maxlength="30" type="text" name="name" id="name-desktop" class="form-input" placeholder="Full name"
         required>
-      <input type="text"
-        pattern="^(?=.{1,64}@)[a-z0-9_-]+(\\.[a-z0-9_-]+)*@[^-][a-z0-9-]+(\\.[a-z0-9-]+)*(\\.[a-z]{2,})$" name="email"
+      <input type="email" name="email"
         id="email-desktop" class="form-input" placeholder="Email address" required>
       <textarea maxlength="500" id="message-desktop" class="textarea-input" name="message"
         placeholder="Typing something" required></textarea>
@@ -232,7 +230,6 @@
     <a class="footer-email" href="mailto:myemailhere@email.com" target="_blank">myemailhere@email.com</a>
     <hr class="footer-line">
   </footer>
-  <script src="./js/form-entries-storage.js"></script>
   <script src="./js/email-validation.js"></script>
   <script src="./js/popup-menu.js"></script>
   <script type="module" src="./js/copy-project-cards.js"></script>
