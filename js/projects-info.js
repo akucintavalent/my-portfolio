@@ -51,7 +51,7 @@ export default
     sourceLink: 'https://github.com/akucintavalent/js-capstone',
   },
   {
-    title: '',
+    title: 'Math magicians',
     imageSrc: './images/projects/project_card_5.png',
     tags: [
       'React',
@@ -63,4 +63,59 @@ export default
     liveLink: 'https://math-magicians-akucintavalent.herokuapp.com',
     sourceLink: 'https://github.com/akucintavalent/math-magicians',
   },
+  {
+    title: 'Bookstore',
+    imageSrc: './images/projects/project_card_6.png',
+    tags: [
+      'React',
+      'Redux',
+      'JavaScript',
+      'CSS',
+      'Webpack',
+    ],
+    text: 'In this web app you can: display a list of books, add a book, and remove a selected book.',
+    liveLink: 'https://bookstore-akucintavalent.herokuapp.com/',
+    sourceLink: 'https://github.com/akucintavalent/bookstore',
+  },
+  {
+    title: 'Space Travelers\' Hub',
+    imageSrc: './images/projects/project_card_7.png',
+    tags: [
+      'React',
+      'Redux',
+      'JavaScript',
+      'CSS',
+      'HTML',
+    ],
+    text: 'This is a capstone project, it is working with the real live data from the SpaceX API. It is a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.',
+    liveLink: 'https://vigorous-darwin-db6969.netlify.app/',
+    sourceLink: 'https://github.com/akucintavalent/space-travelers-hub',
+  },
+  {
+    title: 'COVID-19 stats',
+    imageSrc: './images/projects/project_card_8.png',
+    tags: [
+      'React',
+      'Redux',
+      'JavaScript',
+      'CSS',
+      'HTML',
+    ],
+    text: 'This is a capstone project, it is working with the real live data from the Narrativa API (COVID-19 data) and build a web application for a company that displays COVID-19 data for the previous day.',
+    liveLink: 'https://keen-wright-b70cfc.netlify.app/',
+    sourceLink: 'https://github.com/akucintavalent/covid-19-stats',
+  },
+  // {
+  //   title: '',
+  //   imageSrc: './images/projects/project_card_6.png',
+  //   tags: [
+  //     'React',
+  //     'JavaScript',
+  //     'CSS',
+  //     'HTML',
+  //   ],
+  //   text: '',
+  //   liveLink: '',
+  //   sourceLink: '',
+  // },
 ];
