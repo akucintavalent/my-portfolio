@@ -1,5 +1,7 @@
 import projects from './projects-info.js';
 
+projects.reverse();
+
 const projectEl = document.getElementById('project1');
 const projectsEl = document.getElementById('projects');
 const body1 = document.querySelector('body');
