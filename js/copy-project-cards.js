@@ -1,5 +1,7 @@
 import projects from './projects-info.js';
 
+projects.reverse();
+
 const projectEl = document.getElementById('project1');
 const projectsEl = document.getElementById('projects');
 const body1 = document.querySelector('body');
@@ -58,9 +60,13 @@ for (let i = 0; i < projects.length; i += 1) {
     bigTech.remove();
     // set bahavior of the see live button
     const liveButton = projectPopup.querySelector('#live-button .see-project-button');
-    liveButton.addEventListener('click', () => {
-      window.open(projects[i].liveLink);
-    });
+    if (projects[i].liveLink) {
+      liveButton.addEventListener('click', () => {
+        window.open(projects[i].liveLink);
+      });
+    } else {
+      liveButton.remove();
+    }
     // set behavior of the see source button
     const sourceButton = projectPopup.querySelector('#source-button .see-project-button');
     sourceButton.addEventListener('click', () => {
