@@ -144,4 +144,19 @@ export default
     liveLink: 'https://stormy-journey-61198.herokuapp.com/',
     sourceLink: 'https://github.com/Meri-MG/recipe-app',
   },
+  {
+    title: 'Car Booking Service',
+    imageSrc: './images/projects/project_card_12.png',
+    tags: [
+      'Ruby on Rails',
+      'React',
+      'Redux',
+      'CSS',
+      'HTML',
+      'PostgreSQL',
+    ],
+    text: 'Car Booking Service app is an app where registered users can book cars.',
+    liveLink: 'https://deploy-preview-37--willowy-empanada-95e169.netlify.app/',
+    sourceLink: 'https://github.com/DelhinRharl/car-booking-service-front-end',
+  },
 ];
