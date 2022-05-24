@@ -1,6 +1,9 @@
 import projects from './projects-info.js';
+import eventListeners from './open-link-event-listener.js';
 
-projects.reverse();
+const { openLiveLinkFuncs, openSourceLinkFuncs } = eventListeners;
+
+// projects.reverse();
 
 const projectEl = document.getElementById('project1');
 const projectsEl = document.getElementById('projects');
@@ -60,18 +63,25 @@ for (let i = 0; i < projects.length; i += 1) {
     bigTech.remove();
     // set bahavior of the see live button
     const liveButton = projectPopup.querySelector('#live-button .see-project-button');
-    if (projects[i].liveLink) {
-      liveButton.addEventListener('click', () => {
-        window.open(projects[i].liveLink);
-      });
-    } else {
-      liveButton.remove();
+    if (liveButton) {
+      liveButton.style.display = 'block';
+      if (projects[i].liveLink) {
+        openLiveLinkFuncs.forEach((eventListener) => {
+          liveButton.removeEventListener('click', eventListener);
+        });
+        liveButton.addEventListener('click', openLiveLinkFuncs[i]);
+      } else {
+        liveButton.style.display = 'none';
+      }
     }
     // set behavior of the see source button
     const sourceButton = projectPopup.querySelector('#source-button .see-project-button');
-    sourceButton.addEventListener('click', () => {
-      window.open(projects[i].sourceLink);
-    });
+    if (sourceButton) {
+      openSourceLinkFuncs.forEach((eventListener) => {
+        sourceButton.removeEventListener('click', eventListener);
+      });
+      sourceButton.addEventListener('click', openSourceLinkFuncs[i]);
+    }
     openProjectCard();
   });
   projectsEl.appendChild(projectElClone);
