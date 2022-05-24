@@ -142,7 +142,7 @@ export default
     ],
     text: 'The Ruby on Rails Budget App is about building a mobile web application where user can manage the budget: they have a list of transactions associated with a category, so that the user can see how much money they spent and on what.',
     liveLink: 'https://stormy-journey-61198.herokuapp.com/',
-    sourceLink: 'https://github.com/Meri-MG/recipe-app',
+    sourceLink: 'https://github.com/akucintavalent/budget',
   },
   {
     title: 'Car Booking Service',
