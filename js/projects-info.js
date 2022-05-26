@@ -2,7 +2,7 @@ export default
 [
   {
     title: 'Movies',
-    imageSrc: './images/projects/project_card_4.png',
+    imageSrc: './images/projects/movies.png',
     tags: [
       'HTML',
       'Webpack',
@@ -15,7 +15,7 @@ export default
   },
   {
     title: 'Space Travelers\' Hub',
-    imageSrc: './images/projects/project_card_7.png',
+    imageSrc: './images/projects/space_travelers_hub.png',
     tags: [
       'React',
       'Redux',
@@ -29,7 +29,7 @@ export default
   },
   {
     title: 'COVID-19 stats',
-    imageSrc: './images/projects/project_card_8.png',
+    imageSrc: './images/projects/covid_19_stats.png',
     tags: [
       'React',
       'Redux',
@@ -43,7 +43,7 @@ export default
   },
   {
     title: 'Blog App',
-    imageSrc: './images/projects/project_card_9.png',
+    imageSrc: './images/projects/blog.png',
     tags: [
       'Ruby on Rails',
       'CSS',
@@ -56,7 +56,7 @@ export default
   },
   {
     title: 'Recipe App',
-    imageSrc: './images/projects/project_card_10.png',
+    imageSrc: './images/projects/recipe_app.png',
     tags: [
       'Ruby on Rails',
       'CSS',
@@ -69,7 +69,7 @@ export default
   },
   {
     title: 'Car Booking Service',
-    imageSrc: './images/projects/project_card_12.png',
+    imageSrc: './images/projects/car_booking.png',
     tags: [
       'Ruby on Rails',
       'React',
